@@ -18,7 +18,7 @@ namespace UmaYosoku
         public Dashboard()
         {
             // =========================
-            // PANEL SETTINGS
+            // PANEL SETTINGSsssssssss
             // =========================
 
             this.Size = new Size(250, 400);
