@@ -64,7 +64,7 @@ namespace UmaYosoku
 
 
             // =========================
-            // SOFT VOTING
+            // SOFT VOTINGaaa
             // =========================
 
             softVotingLabel = CreateLabel(
