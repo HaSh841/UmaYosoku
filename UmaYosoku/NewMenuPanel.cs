@@ -7,42 +7,13 @@ using UmaYosoku.PANELS;
 
 namespace UmaYosoku
 {
-    public class MenuPanel : Panel
+    public class NewMenuPanel : Panel
     {
-        public MenuPanel()
+        public NewMenuPanel()
         {
             this.Size = new Size(320, 600);
             this.BackColor = Color.Transparent;
             this.DoubleBuffered = true;
-
-            //pick a race button
-
-            PickARace btn1 = new PickARace();
-            btn1.Location = new Point(40, 40);
-
-            btn1.Click += PickArace_Click;
-
-            //predict race button
-
-            PredictRace btn2 = new PredictRace();
-            btn2.Location = new Point(180, 40);
-
-            this.Controls.Add(btn1);
-            this.Controls.Add(btn2);
-        }
-
-        //action listener
-
-        private void PickArace_Click(object sender, EventArgs e)
-        {
-            PickARacePanel pick = new PickARacePanel();
-            pick.FormClosed += (s, args) =>
-            {
-                this.Show();
-            };
-
-            this.Hide();
-            pick.Show();
         }
 
         protected override void OnPaint(PaintEventArgs e)
