@@ -2,7 +2,6 @@
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 using UmaYosoku.Button;
-using System.Windows;
 using UmaYosoku.PANELS;
 
 namespace UmaYosoku
@@ -15,15 +14,13 @@ namespace UmaYosoku
             this.BackColor = Color.Transparent;
             this.DoubleBuffered = true;
 
-            //pick a race button
-
+            // PICK A RACE BUTTON
             PickARace btn1 = new PickARace();
             btn1.Location = new Point(40, 40);
 
             btn1.Click += PickArace_Click;
 
-            //predict race button
-
+            // PREDICT RACE BUTTON
             PredictRace btn2 = new PredictRace();
             btn2.Location = new Point(180, 40);
 
@@ -31,17 +28,13 @@ namespace UmaYosoku
             this.Controls.Add(btn2);
         }
 
-        //action listener
-
-        private void PickArace_Click(object sender, EventArgs e)
+        // PICK A RACE CLICK
+        private void PickArace_Click(object sender, System.EventArgs e)
         {
+            // Open PickARacePanel.
+            // DO NOT hide this MenuPanel.
             PickARacePanel pick = new PickARacePanel();
-            pick.FormClosed += (s, args) =>
-            {
-                this.Show();
-            };
 
-            this.Hide();
             pick.Show();
         }
 
@@ -62,7 +55,15 @@ namespace UmaYosoku
             {
                 int radius = 30;
 
-                path.AddArc(rect.X, rect.Y, radius, radius, 180, 90);
+                path.AddArc(
+                    rect.X,
+                    rect.Y,
+                    radius,
+                    radius,
+                    180,
+                    90
+                );
+
                 path.AddArc(
                     rect.Right - radius,
                     rect.Y,
@@ -71,6 +72,7 @@ namespace UmaYosoku
                     270,
                     90
                 );
+
                 path.AddArc(
                     rect.Right - radius,
                     rect.Bottom - radius,
@@ -79,6 +81,7 @@ namespace UmaYosoku
                     0,
                     90
                 );
+
                 path.AddArc(
                     rect.X,
                     rect.Bottom - radius,
