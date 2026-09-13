@@ -7,29 +7,65 @@ namespace UmaYosoku.Button
     {
         public BackButton()
         {
-            Text = "<-";
+            // =========================
+            // TEXT
+            // =========================
 
-            Size = new Size(50, 40);
+            this.Text = "<-";
 
-            ForeColor = Color.White;
-            BackColor = Color.Transparent;
+            // =========================
+            // SIZE
+            // =========================
 
-            FlatStyle = FlatStyle.Flat;
+            this.Size =
+                new Size(50, 40);
 
-            FlatAppearance.BorderSize = 0;
-            FlatAppearance.MouseDownBackColor = Color.Transparent;
-            FlatAppearance.MouseOverBackColor = Color.Transparent;
+            // =========================
+            // APPEARANCE
+            // =========================
 
-            Font = new Font(
-                "Segoe UI",
-                14F,
-                FontStyle.Bold
-            );
+            this.ForeColor =
+                Color.White;
 
-            Cursor = Cursors.Hand;
-            TabStop = false;
+            this.BackColor =
+                Color.Transparent;
 
-            UseVisualStyleBackColor = false;
+            this.FlatStyle =
+                FlatStyle.Flat;
+
+            // Remove border
+            this.FlatAppearance.BorderSize = 0;
+
+            // Remove hover background
+            this.FlatAppearance.MouseOverBackColor =
+                Color.Transparent;
+
+            // Remove click background
+            this.FlatAppearance.MouseDownBackColor =
+                Color.Transparent;
+
+            // =========================
+            // FONT
+            // =========================
+
+            this.Font =
+                new Font(
+                    "Segoe UI",
+                    14F,
+                    FontStyle.Bold
+                );
+
+            // =========================
+            // OTHER
+            // =========================
+
+            this.Cursor =
+                Cursors.Hand;
+
+            this.TabStop = false;
+
+            this.UseVisualStyleBackColor =
+                false;
         }
     }
 }
