@@ -55,7 +55,7 @@ namespace UmaYosoku
 
             MenuPanel menuPanel = new MenuPanel();
 
-            menuPanel.Size = new Size(300, 600);
+            menuPanel.Size = new Size(320, 600);
 
             menuPanel.Location = new Point(
                 (pictureBox.ClientSize.Width - menuPanel.Width) / 2,
