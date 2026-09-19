@@ -3,11 +3,13 @@ using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 using UmaYosoku.Button;
 using UmaYosoku.PANELS;
+using System.Media;
 
 namespace UmaYosoku
 {
     public class MenuPanel : Panel
     {
+        private SoundPlayer sfx;
         public MenuPanel()
         {
             // =========================
@@ -32,8 +34,11 @@ namespace UmaYosoku
             btn1.Location =
                 new Point(40, 40);
 
+            sfx = new SoundPlayer(Properties.Resources.sfx1);
+
             btn1.Click +=
                 PickArace_Click;
+
 
             // =========================
             // PREDICT RACE BUTTON
@@ -70,8 +75,7 @@ namespace UmaYosoku
                 return;
             }
 
-            // Stop Form1 music
-            mainForm.StopBackgroundMusic();
+           
 
             // Create PickARacePanel
             PickARacePanel pick =
@@ -82,6 +86,8 @@ namespace UmaYosoku
 
             // Show PickARacePanel
             pick.Show();
+
+            sfx.Play();
         }
 
         // =========================

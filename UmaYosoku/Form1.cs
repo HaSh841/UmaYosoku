@@ -1,14 +1,11 @@
 using System.Drawing;
 using System.IO;
-using System.Media;
 using System.Windows.Forms;
 
 namespace UmaYosoku
 {
     public partial class Form1 : Form
     {
-        private SoundPlayer backgroundMusic;
-
         public Form1()
         {
             InitializeComponent();
@@ -31,16 +28,6 @@ namespace UmaYosoku
                     Properties.Resources.oguri_icon
                 )
             );
-
-            // =========================
-            // BGM
-            // =========================
-
-            backgroundMusic = new SoundPlayer(
-                Properties.Resources.BRIGHTEST_HEART
-            );
-
-            backgroundMusic.PlayLooping();
 
             // =========================
             // BACKGROUND
@@ -102,30 +89,6 @@ namespace UmaYosoku
             pictureBox.Controls.Add(dashboard);
 
             dashboard.BringToFront();
-        }
-
-        // =========================
-        // STOP MUSIC
-        // =========================
-
-        public void StopBackgroundMusic()
-        {
-            if (backgroundMusic != null)
-            {
-                backgroundMusic.Stop();
-            }
-        }
-
-        // =========================
-        // PLAY MUSIC
-        // =========================
-
-        public void PlayBackgroundMusic()
-        {
-            if (backgroundMusic != null)
-            {
-                backgroundMusic.PlayLooping();
-            }
         }
     }
 }

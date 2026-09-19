@@ -1,10 +1,13 @@
 ﻿using System.Drawing;
 using System.Windows.Forms;
 
+
 namespace UmaYosoku.Button
 {
     public class PickARace : System.Windows.Forms.Button
     {
+
+        
         public PickARace()
         {
             this.Text = "PICK A\nRACE";
@@ -29,6 +32,9 @@ namespace UmaYosoku.Button
             );
 
             this.TextAlign = ContentAlignment.MiddleCenter;
+
+            
+
         }
     }
 }

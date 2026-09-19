@@ -4,6 +4,7 @@ using System.Drawing.Drawing2D;
 using System.IO;
 using System.Windows.Forms;
 using UmaYosoku.Button;
+using System.Media;
 
 namespace UmaYosoku.PANELS
 {
@@ -12,6 +13,7 @@ namespace UmaYosoku.PANELS
         // Reference to the original Form1
         private Form1 mainForm;
 
+        private SoundPlayer sfx;
         public PickARacePanel(Form1 mainForm)
         {
             this.mainForm = mainForm;
@@ -57,7 +59,6 @@ namespace UmaYosoku.PANELS
             picBox.Dock =
                 DockStyle.Fill;
 
-            // Fit image to entire form
             picBox.SizeMode =
                 PictureBoxSizeMode.StretchImage;
 
@@ -101,6 +102,8 @@ namespace UmaYosoku.PANELS
                 15
             );
 
+            sfx = new SoundPlayer(Properties.Resources.sfx1);
+
             backBtn.Click +=
                 BackButton_Click;
 
@@ -121,15 +124,13 @@ namespace UmaYosoku.PANELS
             if (mainForm != null)
             {
                 mainForm.Show();
-
                 mainForm.BringToFront();
-
-                // Play Form1 music again
-                mainForm.PlayBackgroundMusic();
             }
 
             // Close PickARacePanel
             this.Close();
+
+            sfx.Play();
         }
     }
 
