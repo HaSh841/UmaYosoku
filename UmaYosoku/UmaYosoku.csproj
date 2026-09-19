@@ -16,6 +16,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.ML" Version="5.0.0" />
     <PackageReference Include="Microsoft.ML.DataView" Version="5.0.0" />
+    <PackageReference Include="Microsoft.ML.FastTree" Version="5.0.0" />
     <PackageReference Include="Microsoft.ML.LightGbm" Version="5.0.0" />
     <PackageReference Include="Microsoft.ML.OnnxTransformer" Version="5.0.0" />
     <PackageReference Include="NAudio" Version="3.1.0" />
