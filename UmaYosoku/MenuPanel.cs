@@ -2,49 +2,130 @@
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 using UmaYosoku.Button;
+using UmaYosoku.PANELS;
+using System.Media;
 
 namespace UmaYosoku
 {
     public class MenuPanel : Panel
     {
+        private SoundPlayer sfx;
         public MenuPanel()
         {
-            this.Size = new Size(300, 600);
-            this.BackColor = Color.Transparent;
+            // =========================
+            // PANEL SETTINGS
+            // =========================
+
+            this.Size =
+                new Size(320, 600);
+
+            this.BackColor =
+                Color.Transparent;
+
             this.DoubleBuffered = true;
 
-            //pick a race button
+            // =========================
+            // PICK A RACE BUTTON
+            // =========================
 
-            PickARace btn1 = new PickARace();
-            btn1.Location = new Point(35, 40);
+            PickARace btn1 =
+                new PickARace();
 
-            //predict race button
+            btn1.Location =
+                new Point(40, 40);
 
-            PredictRace btn2 = new PredictRace();
-            btn2.Location = new Point(155, 40);
+            sfx = new SoundPlayer(Properties.Resources.sfx1);
+
+            btn1.Click +=
+                PickArace_Click;
+
+
+            // =========================
+            // PREDICT RACE BUTTON
+            // =========================
+
+            PredictRace btn2 =
+                new PredictRace();
+
+            btn2.Location =
+                new Point(180, 40);
+
+            // =========================
+            // ADD BUTTONS
+            // =========================
 
             this.Controls.Add(btn1);
             this.Controls.Add(btn2);
         }
 
-        protected override void OnPaint(PaintEventArgs e)
+        // =========================
+        // PICK A RACE
+        // =========================
+
+        private void PickArace_Click(
+            object sender,
+            System.EventArgs e)
+        {
+            // Get the existing Form1
+            Form1 mainForm =
+                this.FindForm() as Form1;
+
+            if (mainForm == null)
+            {
+                return;
+            }
+
+           
+
+            // Create PickARacePanel
+            PickARacePanel pick =
+                new PickARacePanel(mainForm);
+
+            // Hide Form1
+            mainForm.Hide();
+
+            // Show PickARacePanel
+            pick.Show();
+
+            sfx.Play();
+        }
+
+        // =========================
+        // DRAW MENU PANEL
+        // =========================
+
+        protected override void OnPaint(
+            PaintEventArgs e)
         {
             base.OnPaint(e);
 
-            e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+            e.Graphics.SmoothingMode =
+                SmoothingMode.AntiAlias;
 
-            Rectangle rect = new Rectangle(
-                0,
-                0,
-                this.Width - 1,
-                this.Height - 1
-            );
+            Rectangle rect =
+                new Rectangle(
+                    0,
+                    0,
+                    this.Width - 1,
+                    this.Height - 1
+                );
 
-            using (GraphicsPath path = new GraphicsPath())
+            using (GraphicsPath path =
+                new GraphicsPath())
             {
                 int radius = 30;
 
-                path.AddArc(rect.X, rect.Y, radius, radius, 180, 90);
+                // TOP LEFT
+                path.AddArc(
+                    rect.X,
+                    rect.Y,
+                    radius,
+                    radius,
+                    180,
+                    90
+                );
+
+                // TOP RIGHT
                 path.AddArc(
                     rect.Right - radius,
                     rect.Y,
@@ -53,6 +134,8 @@ namespace UmaYosoku
                     270,
                     90
                 );
+
+                // BOTTOM RIGHT
                 path.AddArc(
                     rect.Right - radius,
                     rect.Bottom - radius,
@@ -61,6 +144,8 @@ namespace UmaYosoku
                     0,
                     90
                 );
+
+                // BOTTOM LEFT
                 path.AddArc(
                     rect.X,
                     rect.Bottom - radius,
@@ -73,9 +158,18 @@ namespace UmaYosoku
                 path.CloseFigure();
 
                 using (SolidBrush brush =
-                    new SolidBrush(Color.FromArgb(160, 0, 0, 0)))
+                    new SolidBrush(
+                        Color.FromArgb(
+                            160,
+                            0,
+                            0,
+                            0
+                        )))
                 {
-                    e.Graphics.FillPath(brush, path);
+                    e.Graphics.FillPath(
+                        brush,
+                        path
+                    );
                 }
             }
         }
