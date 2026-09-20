@@ -94,6 +94,13 @@ namespace UmaYosoku.PANELS
             admire.Location = new Point(30, 30);
             overlay.Controls.Add(admire);
 
+            // admire vega
+
+            AdmireVega vega = new AdmireVega();
+            vega.Location = new Point(admire.Right + 10, 30);
+            overlay.Controls.Add(vega);
+
+            vega.BringToFront();
 
             // =========================
             // BACK BUTTON

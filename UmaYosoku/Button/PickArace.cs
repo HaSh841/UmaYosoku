@@ -10,7 +10,7 @@ namespace UmaYosoku.Button
         
         public PickARace()
         {
-            this.Text = "PICK A\nRACE";
+            this.Text = "Horses";
 
             this.Size = new Size(100, 40);
 
