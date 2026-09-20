@@ -5,6 +5,7 @@ using System.IO;
 using System.Windows.Forms;
 using UmaYosoku.Button;
 using System.Media;
+using UmaYosoku.UMA_BUTTONS;
 
 namespace UmaYosoku.PANELS
 {
@@ -64,6 +65,7 @@ namespace UmaYosoku.PANELS
 
             this.Controls.Add(picBox);
 
+            
             // =========================
             // SEMI-TRANSPARENT PANEL
             // =========================
@@ -85,6 +87,20 @@ namespace UmaYosoku.PANELS
             picBox.Controls.Add(overlay);
 
             overlay.BringToFront();
+
+            // admire groove
+
+            AdmireGroove admire = new AdmireGroove();
+            admire.Location = new Point(30, 30);
+            overlay.Controls.Add(admire);
+
+            // admire vega
+
+            AdmireVega vega = new AdmireVega();
+            vega.Location = new Point(admire.Right + 10, 30);
+            overlay.Controls.Add(vega);
+
+            vega.BringToFront();
 
             // =========================
             // BACK BUTTON
@@ -112,6 +128,8 @@ namespace UmaYosoku.PANELS
             backBtn.BringToFront();
         }
 
+
+        
         // =========================
         // BACK BUTTON
         // =========================
@@ -133,6 +151,7 @@ namespace UmaYosoku.PANELS
             sfx.Play();
         }
     }
+
 
 
     // ==========================================
