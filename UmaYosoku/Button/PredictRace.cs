@@ -7,7 +7,7 @@ namespace UmaYosoku.Button
     {
         public PredictRace()
         {
-            this.Text = "PREDICT\nRACE";
+            this.Text = "Winrate";
 
             this.Size = new Size(100, 40);
 
