@@ -118,6 +118,14 @@ namespace UmaYosoku.PANELS
 
             week.BringToFront();
 
+            // silence suzuka
+
+            SilenceSuzuka silence = new SilenceSuzuka();
+            silence.Location = new Point(week.Right + 10, 30);
+            overlay.Controls.Add(silence);
+
+            silence.BringToFront();
+
             // =========================
             // BACK BUTTON
             // =========================
