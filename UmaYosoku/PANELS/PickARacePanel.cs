@@ -110,6 +110,14 @@ namespace UmaYosoku.PANELS
 
             digital.BringToFront();
 
+            // special week
+
+            SpecialWeek week = new SpecialWeek();
+            week.Location = new Point(digital.Right + 10, 30);
+            overlay.Controls.Add(week);
+
+            week.BringToFront();
+
             // =========================
             // BACK BUTTON
             // =========================

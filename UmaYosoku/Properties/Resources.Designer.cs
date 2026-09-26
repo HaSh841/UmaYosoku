@@ -137,5 +137,15 @@ namespace UmaYosoku.Properties {
                 return ResourceManager.GetStream("sfx1", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap specialweek_icon {
+            get {
+                object obj = ResourceManager.GetObject("specialweek_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
