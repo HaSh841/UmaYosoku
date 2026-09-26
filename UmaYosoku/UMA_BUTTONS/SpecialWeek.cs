@@ -17,7 +17,7 @@ namespace UmaYosoku.UMA_BUTTONS
 
             // image
 
-            this.Image = new Bitmap(Properties.Resources.specialweek_icon, new Size(52, 52));
+            this.Image = new Bitmap(Properties.Resources.Special_Week_29, new Size(52, 52));
             this.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
             // button style
