@@ -102,6 +102,14 @@ namespace UmaYosoku.PANELS
 
             vega.BringToFront();
 
+            // agnes digital
+
+            AgnesDigital digital = new AgnesDigital();
+            digital.Location = new Point(vega.Right + 10, 30);
+            overlay.Controls.Add(digital);
+
+            digital.BringToFront();
+
             // =========================
             // BACK BUTTON
             // =========================
