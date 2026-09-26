@@ -102,6 +102,22 @@ namespace UmaYosoku.PANELS
 
             vega.BringToFront();
 
+            // agnes digital
+
+            AgnesDigital digital = new AgnesDigital();
+            digital.Location = new Point(vega.Right + 10, 30);
+            overlay.Controls.Add(digital);
+
+            digital.BringToFront();
+
+            // special week
+
+            SpecialWeek week = new SpecialWeek();
+            week.Location = new Point(digital.Right + 10, 30);
+            overlay.Controls.Add(week);
+
+            week.BringToFront();
+
             // =========================
             // BACK BUTTON
             // =========================
