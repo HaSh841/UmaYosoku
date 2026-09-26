@@ -141,9 +141,9 @@ namespace UmaYosoku.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap specialweek_icon {
+        internal static System.Drawing.Bitmap Special_Week_29 {
             get {
-                object obj = ResourceManager.GetObject("specialweek_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("Special_Week_29", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
