@@ -7,9 +7,9 @@ using System.Windows.Forms.VisualStyles;
 
 namespace UmaYosoku.UMA_BUTTONS
 {
-    public class SpecialWeek : System.Windows.Forms.Button
+    public class SilenceSuzuka : System.Windows.Forms.Button
     {
-        public SpecialWeek()
+        public SilenceSuzuka()
         {
             // button size
 
@@ -17,10 +17,10 @@ namespace UmaYosoku.UMA_BUTTONS
 
             // image
 
-            this.Image = new Bitmap(Properties.Resources.Special_Week_29, new Size(52, 52));
+            this.Image = new Bitmap(Properties.Resources.Silence_Suzuka_29, new Size(52, 52));
             this.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
-            // button style
+            // btn style
 
             this.FlatStyle = FlatStyle.Flat;
             this.FlatAppearance.BorderSize = 0;
@@ -29,12 +29,7 @@ namespace UmaYosoku.UMA_BUTTONS
             this.FlatAppearance.MouseOverBackColor = Color.Gray;
             this.FlatAppearance.MouseDownBackColor = Color.DimGray;
 
-            // no text
-
             this.Text = "";
-
-            // cursor
-
             this.Cursor = Cursors.Hand;
         }
     }
