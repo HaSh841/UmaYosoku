@@ -102,9 +102,49 @@ namespace UmaYosoku.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Fuji_Kiseki_29 {
+            get {
+                object obj = ResourceManager.GetObject("Fuji_Kiseki_29", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gold_Ship_29 {
+            get {
+                object obj = ResourceManager.GetObject("Gold_Ship_29", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Maruzensky_29 {
+            get {
+                object obj = ResourceManager.GetObject("Maruzensky_29", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap oguri_cap {
             get {
                 object obj = ResourceManager.GetObject("oguri-cap", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Oguri_Cap_29 {
+            get {
+                object obj = ResourceManager.GetObject("Oguri_Cap_29", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -154,6 +194,16 @@ namespace UmaYosoku.Properties {
         internal static System.Drawing.Bitmap Special_Week_29 {
             get {
                 object obj = ResourceManager.GetObject("Special_Week_29", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tokai_Teio_29 {
+            get {
+                object obj = ResourceManager.GetObject("Tokai_Teio_29", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

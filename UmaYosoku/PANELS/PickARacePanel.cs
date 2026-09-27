@@ -126,6 +126,14 @@ namespace UmaYosoku.PANELS
 
             silence.BringToFront();
 
+            // tokai teio
+
+            TokaiTeio hachimi = new TokaiTeio();
+            hachimi.Location = new Point(silence.Right + 10, 30);
+            overlay.Controls.Add(hachimi);
+
+            hachimi.BringToFront();
+
             // =========================
             // BACK BUTTON
             // =========================
