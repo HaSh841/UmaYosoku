@@ -150,6 +150,14 @@ namespace UmaYosoku.PANELS
 
             kiseki.BringToFront();
 
+            // oguri cap
+
+            OguriCap oguri = new OguriCap();
+            oguri.Location = new Point(kiseki.Right + 10, 30);
+            overlay.Controls.Add(oguri);
+
+            oguri.BringToFront();
+
             // =========================
             // BACK BUTTON
             // =========================
