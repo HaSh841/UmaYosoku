@@ -150,6 +150,22 @@ namespace UmaYosoku.PANELS
 
             kiseki.BringToFront();
 
+            // oguri cap
+
+            OguriCap oguri = new OguriCap();
+            oguri.Location = new Point(kiseki.Right + 10, 30);
+            overlay.Controls.Add(oguri);
+
+            oguri.BringToFront();
+
+            // gold ship
+
+            GoldShip gold = new GoldShip();
+            gold.Location = new Point(oguri.Right + 10, 30);
+            overlay.Controls.Add(gold);
+
+            gold.BringToFront();
+
             // =========================
             // BACK BUTTON
             // =========================
