@@ -134,6 +134,14 @@ namespace UmaYosoku.PANELS
 
             hachimi.BringToFront();
 
+            // maruzensky
+
+            Maruzensky maru = new Maruzensky();
+            maru.Location = new Point(hachimi.Right + 10, 30);
+            overlay.Controls.Add(maru);
+
+            maru.BringToFront();
+
             // =========================
             // BACK BUTTON
             // =========================
