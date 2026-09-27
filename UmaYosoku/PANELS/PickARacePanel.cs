@@ -142,6 +142,14 @@ namespace UmaYosoku.PANELS
 
             maru.BringToFront();
 
+            // fuji kiseki
+
+            FujiKiseki kiseki = new FujiKiseki();
+            kiseki.Location = new Point(maru.Right + 10, 30);
+            overlay.Controls.Add(kiseki);
+
+            kiseki.BringToFront();
+
             // =========================
             // BACK BUTTON
             // =========================
