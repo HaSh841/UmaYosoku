@@ -126,6 +126,30 @@ namespace UmaYosoku.PANELS
 
             silence.BringToFront();
 
+            // tokai teio
+
+            TokaiTeio hachimi = new TokaiTeio();
+            hachimi.Location = new Point(silence.Right + 10, 30);
+            overlay.Controls.Add(hachimi);
+
+            hachimi.BringToFront();
+
+            // maruzensky
+
+            Maruzensky maru = new Maruzensky();
+            maru.Location = new Point(hachimi.Right + 10, 30);
+            overlay.Controls.Add(maru);
+
+            maru.BringToFront();
+
+            // fuji kiseki
+
+            FujiKiseki kiseki = new FujiKiseki();
+            kiseki.Location = new Point(maru.Right + 10, 30);
+            overlay.Controls.Add(kiseki);
+
+            kiseki.BringToFront();
+
             // =========================
             // BACK BUTTON
             // =========================

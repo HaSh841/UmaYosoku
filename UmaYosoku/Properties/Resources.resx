@@ -130,6 +130,15 @@
   <data name="BRIGHTEST HEART" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BRIGHTEST HEART.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="Fuji_Kiseki_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fuji_Kiseki_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gold_Ship_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gold_Ship_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Maruzensky_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Maruzensky_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="oguri-cap" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\oguri-cap.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -139,6 +148,9 @@
   <data name="oguri2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\oguri2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Oguri_Cap_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Oguri_Cap_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="sfx1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sfx1.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -147,5 +159,8 @@
   </data>
   <data name="Special_Week_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Special_Week_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tokai_Teio_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tokai_Teio_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
