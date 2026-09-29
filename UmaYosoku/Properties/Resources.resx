@@ -127,8 +127,23 @@
   <data name="Agnes_Digital_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Agnes_Digital_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Air_Groove_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Air_Groove_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Biwa_Hayahide" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Biwa_Hayahide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="BRIGHTEST HEART" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BRIGHTEST HEART.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Daiwa_Scarlet_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Daiwa_Scarlet_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="El_Condor_Pasa_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\El_Condor_Pasa_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fine_Motion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fine_Motion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Fuji_Kiseki_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fuji_Kiseki_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,8 +151,35 @@
   <data name="Gold_Ship_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gold_Ship_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Grass_Wonder_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Grass_Wonder_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hishi_Akebono" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hishi_Akebono.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hishi_Amazon_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hishi_Amazon_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Manhattan_Cafe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Manhattan_Cafe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Maruzensky_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Maruzensky_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mayano_Top_Gun" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mayano_Top_Gun.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mejiro_McQueen_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mejiro_McQueen_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mejiro_Ryan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mejiro_Ryan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MihonoBourbon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MihonoBourbon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Narita_Brian_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Narita_Brian_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="oguri-cap" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\oguri-cap.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,6 +193,9 @@
   <data name="Oguri_Cap_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Oguri_Cap_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Seiun_Sky" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Seiun_Sky.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="sfx1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sfx1.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -160,7 +205,22 @@
   <data name="Special_Week_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Special_Week_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Symboli_Rudolf_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Symboli_Rudolf_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="T.M._Opera_O_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\T.M._Opera_O_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Taiki_Shuttle_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Taiki_Shuttle_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tamamo_Cross" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tamamo_Cross.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Tokai_Teio_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tokai_Teio_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Vodka_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Vodka_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -91,7 +91,7 @@ namespace UmaYosoku.PANELS
             // admire groove
 
             AdmireGroove admire = new AdmireGroove();
-            admire.Location = new Point(30, 30);
+            admire.Location = new Point(40, 30);
             overlay.Controls.Add(admire);
 
             // admire vega
@@ -165,6 +165,148 @@ namespace UmaYosoku.PANELS
             overlay.Controls.Add(gold);
 
             gold.BringToFront();
+
+            // vodka
+
+            Vodka vodka = new Vodka();
+            vodka.Location = new Point(gold.Right + 10, 30);
+            overlay.Controls.Add(vodka);
+
+            vodka.BringToFront();
+
+            // daiwa scarlet
+
+            DaiwaScarlet daiwa = new DaiwaScarlet();
+            daiwa.Location = new Point(vodka.Right + 10, 30);
+            overlay.Controls.Add(daiwa);
+
+            daiwa.BringToFront();
+
+            // taiki shuttle
+            TaikiShuttle taiki = new TaikiShuttle();
+            taiki.Location = new Point(daiwa.Right + 10, 30);
+            overlay.Controls.Add(taiki);
+
+            taiki.BringToFront();
+
+            // grass wonder
+            GrassWonder grass = new GrassWonder();
+            grass.Location = new Point(taiki.Right + 10, 30);
+            overlay.Controls.Add(grass);
+
+            grass.BringToFront();
+
+            // hishi amazon
+            HishiAmazon hishi = new HishiAmazon();
+            hishi.Location = new Point(grass.Right + 10, 30);
+            overlay.Controls.Add(hishi);
+
+            hishi.BringToFront();
+
+            // mejiro mcqueen
+
+            MejiroMcQueen mejiro = new MejiroMcQueen();
+            mejiro.Location = new Point(40, 100);
+            overlay.Controls.Add(mejiro);
+
+            // el condor pasa
+
+            ElCondorPasa pasa = new ElCondorPasa();
+            pasa.Location = new Point(mejiro.Right + 10, 100);
+            overlay.Controls.Add(pasa);
+
+            pasa.BringToFront();
+
+            // tm opera o
+            TMOperaO opera = new TMOperaO();
+            opera.Location = new Point(pasa.Right + 10, 100);
+            overlay.Controls.Add(opera);
+
+            opera.BringToFront();
+
+            // narita brian
+            NaritaBrian brian = new NaritaBrian();
+            brian.Location = new Point(opera.Right + 10, 100);
+            overlay.Controls.Add(brian);
+
+            brian.BringToFront();
+
+            // symboli rudolf
+            SymboliRudolf symboli = new SymboliRudolf();
+            symboli.Location = new Point(brian.Right + 10, 100);
+            overlay.Controls.Add(symboli);
+
+            symboli.BringToFront();
+
+            // air groove
+            AirGroove air = new AirGroove();
+            air.Location = new Point(symboli.Right + 10, 100);
+            overlay.Controls.Add(air);
+
+            air.BringToFront();
+
+            // seiun sky
+            SeiunSky seiun = new SeiunSky();
+            seiun.Location = new Point(air.Right + 10, 100);
+            overlay.Controls.Add(seiun);
+
+            seiun.BringToFront();
+
+            // tamamo cross
+            TamamoCross tamamo = new TamamoCross();
+            tamamo.Location = new Point(seiun.Right + 10, 100);
+            overlay.Controls.Add(tamamo);
+
+            tamamo.BringToFront();
+
+            // fine motion
+            FineMotion fine = new FineMotion();
+            fine.Location = new Point(tamamo.Right + 10, 100);
+            overlay.Controls.Add(fine);
+
+            fine.BringToFront();
+
+            // biwa hayahide
+            BiwaHayahide biwa = new BiwaHayahide();
+            biwa.Location = new Point(fine.Right + 10, 100);
+            overlay.Controls.Add(biwa);
+
+            biwa.BringToFront();
+
+            // mayano top gun
+            MayanoTopGun mayano = new MayanoTopGun();
+            mayano.Location = new Point(biwa.Right + 10, 100);
+            overlay.Controls.Add(mayano);
+
+            mayano.BringToFront();
+
+            // manhattan cafe
+            ManhattanCafe manhattan = new ManhattanCafe();
+            manhattan.Location = new Point(mayano.Right + 10, 100);
+            overlay.Controls.Add(manhattan);
+
+            manhattan.BringToFront();
+
+            // mihono bourbon
+            MihonoBourbon mihono = new MihonoBourbon();
+            mihono.Location = new Point(manhattan.Right + 10, 100);
+            overlay.Controls.Add(mihono);
+
+            mihono.BringToFront();
+
+            // mejiro ryan
+            MejiroRyan ryan = new MejiroRyan();
+            ryan.Location = new Point(mihono.Right + 10, 100);
+            overlay.Controls.Add(ryan);
+
+            ryan.BringToFront();
+
+            // hishi akebono
+            HishiAkebono hishiAkebono = new HishiAkebono();
+            hishiAkebono.Location = new Point(ryan.Right + 10, 100);
+            overlay.Controls.Add(hishiAkebono);
+
+            hishiAkebono.BringToFront();
 
             // =========================
             // BACK BUTTON
