@@ -5,11 +5,14 @@ using System.Drawing;
 using System.Windows.Forms;
 using UmaYosoku.PANELS;
 using UmaYosoku.UMA_DATA;
+using System.Media;
 
 namespace UmaYosoku.UMA_BUTTONS
 {
     public class AdmireGroove : System.Windows.Forms.Button
+
     {
+        private SoundPlayer sfx;
         public AdmireGroove()
         {
             // button size
@@ -42,6 +45,8 @@ namespace UmaYosoku.UMA_BUTTONS
             // action listener
 
             this.Click += AdmireGroove_Click;
+
+            sfx = new SoundPlayer(Properties.Resources.weei);
         }
 
         private void AdmireGroove_Click(object sender, EventArgs e)
@@ -54,6 +59,7 @@ namespace UmaYosoku.UMA_BUTTONS
 
             pick.Hide();
             data.Show();
+            sfx.Play();
         }
     }
 }
