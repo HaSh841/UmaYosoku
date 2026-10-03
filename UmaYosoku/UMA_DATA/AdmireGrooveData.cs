@@ -20,6 +20,7 @@ namespace UmaYosoku.UMA_DATA
         {
             // form settings
 
+
             this.pick = pick;
             this.Text = "UmaYosoku";
             this.Size = new Size(500, 700);
@@ -28,6 +29,10 @@ namespace UmaYosoku.UMA_DATA
             this.MinimizeBox = true;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.Icon = new Icon(new MemoryStream(Properties.Resources.oguri_icon));
+
+            // sfx
+
+            sfx = new SoundPlayer(Properties.Resources.sfx1);
 
             PictureBox picBox = new PictureBox();
             picBox.Image = Properties.Resources.still_in_love;
@@ -71,7 +76,7 @@ namespace UmaYosoku.UMA_DATA
             // Close PickARacePanel
             this.Close();
 
-            
+            sfx.Play();
         }
     }
 }
