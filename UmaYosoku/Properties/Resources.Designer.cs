@@ -781,6 +781,16 @@ namespace UmaYosoku.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap still_in_love {
+            get {
+                object obj = ResourceManager.GetObject("still_in_love", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Super_Creek {
             get {
                 object obj = ResourceManager.GetObject("Super_Creek", resourceCulture);

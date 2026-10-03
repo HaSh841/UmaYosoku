@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using System.Drawing;
 using System.Windows.Forms;
+using UmaYosoku.PANELS;
+using UmaYosoku.UMA_DATA;
 
 namespace UmaYosoku.UMA_BUTTONS
 {
@@ -32,10 +34,26 @@ namespace UmaYosoku.UMA_BUTTONS
             // no text
 
             this.Text = "";
-
+            
             // cursor
 
             this.Cursor = Cursors.Hand;
+
+            // action listener
+
+            this.Click += AdmireGroove_Click;
+        }
+
+        private void AdmireGroove_Click(object sender, EventArgs e)
+        {
+            PickARacePanel pick = this.FindForm() as PickARacePanel;
+
+            if (pick == null) return;
+
+            AdmireGrooveData data = new AdmireGrooveData(pick);
+
+            pick.Hide();
+            data.Show();
         }
     }
 }
