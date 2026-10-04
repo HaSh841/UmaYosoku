@@ -4,11 +4,15 @@ using System.Text;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
+using System.Media;
+using UmaYosoku.PANELS;
+using UmaYosoku.UMA_DATA;
 
 namespace UmaYosoku.UMA_BUTTONS
 {
     public class AdmireVega : System.Windows.Forms.Button
     {
+        private SoundPlayer sfx;
         public AdmireVega()
         {
             // button size
@@ -36,6 +40,26 @@ namespace UmaYosoku.UMA_BUTTONS
             // cursor
 
             this.Cursor = Cursors.Hand;
+
+            // action listener
+
+            this.Click += AdmireVega_Click;
+
+            sfx = new SoundPlayer(Properties.Resources.weei);
+
+        }
+
+        private void AdmireVega_Click(object sender, EventArgs e)
+        {
+            PickARacePanel pick = this.FindForm() as PickARacePanel;
+
+            if (pick == null) return;
+
+            AdmireVegaData data = new AdmireVegaData(pick);
+
+            pick.Hide();
+            data.Show();
+            sfx.Play();
         }
     }
 }
