@@ -62,7 +62,7 @@ namespace UmaYosoku.UMA_DATA
                 new PictureBox();
 
             picBox.Image =
-                Properties.Resources.still_in_love;
+                Properties.Resources.admire_vega_bg;
 
             picBox.Dock =
                 DockStyle.Fill;
