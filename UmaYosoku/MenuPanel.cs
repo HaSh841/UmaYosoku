@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using UmaYosoku.Button;
 using UmaYosoku.PANELS;
 using System.Media;
+using System.Net.Http.Headers;
 
 namespace UmaYosoku
 {
@@ -32,7 +33,7 @@ namespace UmaYosoku
                 new PickARace();
 
             btn1.Location =
-                new Point(40, 40);
+                new Point(40, 250);
 
             sfx = new SoundPlayer(Properties.Resources.sfx1);
 
@@ -48,7 +49,19 @@ namespace UmaYosoku
                 new PredictRace();
 
             btn2.Location =
-                new Point(180, 40);
+                new Point(180, 250);
+
+            // title label
+
+            Label title = new Label();
+            title.Text= "Welcome to UmaYosoku!";
+            title.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            title.ForeColor = Color.White;
+            title.BackColor = Color.Transparent;
+            title.AutoSize = false;
+            title.TextAlign = ContentAlignment.MiddleCenter;
+            title.Size = new Size(this.Width, 60);
+            title.Location = new Point(0, 150);
 
             // =========================
             // ADD BUTTONS
@@ -56,6 +69,7 @@ namespace UmaYosoku
 
             this.Controls.Add(btn1);
             this.Controls.Add(btn2);
+            this.Controls.Add(title);
         }
 
         // =========================
