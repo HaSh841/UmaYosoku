@@ -63,6 +63,16 @@ namespace UmaYosoku.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap admire_admire {
+            get {
+                object obj = ResourceManager.GetObject("admire_admire", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Admire_Groove_29 {
             get {
                 object obj = ResourceManager.GetObject("Admire_Groove_29", resourceCulture);
