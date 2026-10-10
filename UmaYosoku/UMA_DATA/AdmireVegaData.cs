@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Drawing.Text;
 using System.IO;
 using System.Media;
+using System.Reflection;
 using System.Windows.Forms;
 using UmaYosoku.PANELS;
 using UmaYosoku.Button;
@@ -24,6 +27,8 @@ namespace UmaYosoku.UMA_DATA
             // =========================
             // FORM SETTINGS
             // =========================
+
+            this.DoubleBuffered = true;
 
             this.Text = "UmaYosoku";
 
@@ -70,6 +75,8 @@ namespace UmaYosoku.UMA_DATA
             picBox.SizeMode =
                 PictureBoxSizeMode.StretchImage;
 
+            EnableDoubleBuffer(picBox);
+
             this.Controls.Add(picBox);
 
             // =========================
@@ -91,329 +98,68 @@ namespace UmaYosoku.UMA_DATA
                      overlay.Height) / 2
                 );
 
+            EnableDoubleBuffer(overlay);
+
             picBox.Controls.Add(overlay);
 
             overlay.BringToFront();
 
             // =========================
-            // HORSE NAME
+            // HORSE PICTURE (TOP LEFT)
             // =========================
 
-            AddLabel(
-                overlay,
-                "Admire Vega",
-                18,
-                15,
-                14
-            );
+            PictureBox horsePic =
+                new PictureBox();
+
+            horsePic.Size =
+                new Size(80, 80);
+
+            horsePic.Location =
+                new Point(18, 15);
+
+            horsePic.BackColor =
+                Color.Transparent;
+
+            horsePic.SizeMode =
+                PictureBoxSizeMode.Zoom;
+
+            horsePic.Image = Properties.Resources.admire_admire;
+
+            EnableDoubleBuffer(horsePic);
+
+            overlay.Controls.Add(horsePic);
 
             // =========================
-            // BASE STATS
+            // HORSE NAME (RIGHT OF PICTURE)
             // =========================
 
-            AddLabel(
-                overlay,
-                "base stats",
-                145,
-                100,
-                11
-            );
+            AddLabel(overlay, "Admire Vega", 110, 60, 16);
 
             // =========================
-            // STAT NAMES
+            // STATS LAYER (drawn above the overlay fill)
             // =========================
 
-            AddLabel(
-                overlay,
-                "speed",
-                18,
-                135,
-                9
-            );
+            Panel statsLayer =
+                new Panel();
 
-            AddLabel(
-                overlay,
-                "stamina",
-                82,
-                135,
-                9
-            );
+            statsLayer.Size =
+                overlay.ClientSize;
 
-            AddLabel(
-                overlay,
-                "power",
-                160,
-                135,
-                9
-            );
+            statsLayer.Location =
+                new Point(0, 0);
 
-            AddLabel(
-                overlay,
-                "guts",
-                235,
-                135,
-                9
-            );
+            statsLayer.BackColor =
+                Color.Transparent;
 
-            AddLabel(
-                overlay,
-                "wit",
-                300,
-                135,
-                9
-            );
+            statsLayer.Paint +=
+                StatsLayer_Paint;
 
-            // =========================
-            // STAT VALUES
-            // =========================
+            EnableDoubleBuffer(statsLayer);
 
-            AddLabel(
-                overlay,
-                "118",
-                27,
-                165,
-                9
-            );
+            overlay.Controls.Add(statsLayer);
 
-            AddLabel(
-                overlay,
-                "96",
-                96,
-                165,
-                9
-            );
-
-            AddLabel(
-                overlay,
-                "132",
-                168,
-                165,
-                9
-            );
-
-            AddLabel(
-                overlay,
-                "85",
-                240,
-                165,
-                9
-            );
-
-            AddLabel(
-                overlay,
-                "119",
-                300,
-                165,
-                9
-            );
-
-            // =========================
-            // APTITUDE
-            // =========================
-
-            AddLabel(
-                overlay,
-                "Aptitude",
-                158,
-                225,
-                11
-            );
-
-            // =========================
-            // SURFACE
-            // =========================
-
-            AddLabel(
-                overlay,
-                "turf",
-                95,
-                270,
-                9
-            );
-
-            AddLabel(
-                overlay,
-                "dirt",
-                155,
-                270,
-                9
-            );
-
-            AddLabel(
-                overlay,
-                "Surface",
-                10,
-                300,
-                9
-            );
-
-            AddLabel(
-                overlay,
-                "2",
-                100,
-                300,
-                9
-            );
-
-            AddLabel(
-                overlay,
-                "8",
-                160,
-                300,
-                9
-            );
-
-            // =========================
-            // DISTANCE
-            // =========================
-
-            AddLabel(
-                overlay,
-                "sprint",
-                85,
-                335,
-                9
-            );
-
-            AddLabel(
-                overlay,
-                "mile",
-                145,
-                335,
-                9
-            );
-
-            AddLabel(
-                overlay,
-                "medium",
-                195,
-                335,
-                9
-            );
-
-            AddLabel(
-                overlay,
-                "long",
-                285,
-                335,
-                9
-            );
-
-            AddLabel(
-                overlay,
-                "Distance",
-                10,
-                365,
-                9
-            );
-
-            AddLabel(
-                overlay,
-                "7",
-                100,
-                365,
-                9
-            );
-
-            AddLabel(
-                overlay,
-                "4",
-                155,
-                365,
-                9
-            );
-
-            AddLabel(
-                overlay,
-                "2",
-                215,
-                365,
-                9
-            );
-
-            AddLabel(
-                overlay,
-                "4",
-                300,
-                365,
-                9
-            );
-
-            // =========================
-            // STRATEGY
-            // =========================
-
-            AddLabel(
-                overlay,
-                "front",
-                85,
-                400,
-                9
-            );
-
-            AddLabel(
-                overlay,
-                "pace",
-                145,
-                400,
-                9
-            );
-
-            AddLabel(
-                overlay,
-                "late",
-                215,
-                400,
-                9
-            );
-
-            AddLabel(
-                overlay,
-                "end",
-                300,
-                400,
-                9
-            );
-
-            AddLabel(
-                overlay,
-                "Strategy",
-                10,
-                430,
-                9
-            );
-
-            AddLabel(
-                overlay,
-                "8",
-                100,
-                430,
-                9
-            );
-
-            AddLabel(
-                overlay,
-                "8",
-                155,
-                430,
-                9
-            );
-
-            AddLabel(
-                overlay,
-                "3",
-                215,
-                430,
-                9
-            );
-
-            AddLabel(
-                overlay,
-                "2",
-                300,
-                430,
-                9
-            );
+            // keep it behind the picture, name and back button
+            statsLayer.SendToBack();
 
             // =========================
             // BACK BUTTON
@@ -440,6 +186,254 @@ namespace UmaYosoku.UMA_DATA
             );
 
             backButton.BringToFront();
+        }
+
+        // =========================
+        // REDUCE FLICKER
+        // =========================
+
+        // Paints the form and all child controls in one buffered pass
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+
+                cp.ExStyle |= 0x02000000; // WS_EX_COMPOSITED
+
+                return cp;
+            }
+        }
+
+        // DoubleBuffered is protected, so turn it on through reflection
+        private static void EnableDoubleBuffer(Control control)
+        {
+            typeof(Control)
+                .GetProperty(
+                    "DoubleBuffered",
+                    BindingFlags.Instance |
+                    BindingFlags.NonPublic)
+                .SetValue(control, true, null);
+        }
+
+        // =========================
+        // DRAW BASE STATS + APTITUDE TABLES
+        // =========================
+
+        // Aptitude numbers: 1 = S, 2 = A, 3 = B, 4 = C, 5 = D, 6 = E, 7 = F, 8 = G
+
+        private void StatsLayer_Paint(
+            object sender,
+            PaintEventArgs e)
+        {
+            Control panel = (Control)sender;
+            Graphics g = e.Graphics;
+
+            g.SmoothingMode = SmoothingMode.AntiAlias;
+            g.TextRenderingHint = TextRenderingHint.AntiAliasGridFit;
+
+            int w = panel.ClientSize.Width;
+
+            float tx = 20f;          // table left
+            float tw = w - 40f;      // table width
+
+            using (Font titleFont = new Font("Segoe UI", 12, FontStyle.Bold))
+            using (Font headFont = new Font("Segoe UI", 9, FontStyle.Bold))
+            using (Font valueFont = new Font("Segoe UI", 10, FontStyle.Bold))
+            using (Font starFont = new Font("Segoe UI Symbol", 8))
+            using (Pen border = new Pen(Color.FromArgb(120, 255, 255, 255)))
+            using (SolidBrush headFill = new SolidBrush(Color.FromArgb(45, 255, 255, 255)))
+            using (SolidBrush bodyFill = new SolidBrush(Color.FromArgb(18, 255, 255, 255)))
+            using (StringFormat center = new StringFormat())
+            {
+                center.Alignment = StringAlignment.Center;
+                center.LineAlignment = StringAlignment.Center;
+                center.FormatFlags =
+                    StringFormatFlags.NoWrap | StringFormatFlags.NoClip;
+
+                // =========================
+                // BASE STATS TABLE
+                // =========================
+
+                DrawText(g, "Base stats", titleFont, center, 0, 108, w, 26);
+
+                float bx = tx;
+                float by = 138f;
+                float rowH = 36f;
+                float labelW = 70f;
+                float statColW = (tw - labelW) / 5f;
+
+                RectangleF baseRect = new RectangleF(bx, by, tw, rowH * 2);
+
+                using (GraphicsPath path = RoundedRect(baseRect, 10))
+                {
+                    g.FillPath(bodyFill, path);
+
+                    // shaded header row + label column
+                    g.SetClip(path);
+                    g.FillRectangle(headFill, bx, by, tw, rowH);
+                    g.FillRectangle(headFill, bx, by, labelW, rowH * 2);
+                    g.ResetClip();
+
+                    g.DrawPath(border, path);
+                }
+
+                // inner lines
+                g.DrawLine(border, bx, by + rowH, bx + tw, by + rowH);
+                g.DrawLine(border, bx + labelW, by, bx + labelW, by + rowH * 2);
+
+                string[] statNames = { "Speed", "Stamina", "Power", "Guts", "Wit" };
+                string[] statValues = { "118", "96", "132", "85", "119" };
+
+                // star label
+                g.DrawString(
+                    "★★★★★",
+                    starFont,
+                    Brushes.Gold,
+                    new RectangleF(bx, by + rowH, labelW, rowH),
+                    center
+                );
+
+                for (int i = 0; i < 5; i++)
+                {
+                    float cx = bx + labelW + i * statColW;
+
+                    DrawText(g, statNames[i], headFont, center,
+                        cx, by, statColW, rowH);
+
+                    DrawText(g, statValues[i], valueFont, center,
+                        cx, by + rowH, statColW, rowH);
+                }
+
+                // =========================
+                // APTITUDE TABLE
+                // =========================
+
+                DrawText(g, "Aptitude", titleFont, center, 0, 235, w, 26);
+
+                float ax = tx;
+                float ay = 263f;
+                float aRowH = 60f;
+                float aLabelW = 90f;
+                float aCellsW = tw - aLabelW;
+
+                RectangleF aptRect = new RectangleF(ax, ay, tw, aRowH * 3);
+
+                using (GraphicsPath path = RoundedRect(aptRect, 10))
+                {
+                    g.FillPath(bodyFill, path);
+
+                    // shaded row-name column
+                    g.SetClip(path);
+                    g.FillRectangle(headFill, ax, ay, aLabelW, aRowH * 3);
+                    g.ResetClip();
+
+                    g.DrawPath(border, path);
+                }
+
+                // inner lines
+                g.DrawLine(border, ax + aLabelW, ay, ax + aLabelW, ay + aRowH * 3);
+                g.DrawLine(border, ax, ay + aRowH, ax + tw, ay + aRowH);
+                g.DrawLine(border, ax, ay + aRowH * 2, ax + tw, ay + aRowH * 2);
+
+                DrawAptRow(g, headFont, valueFont, center, border,
+                    ax, ay, aLabelW, aCellsW, aRowH,
+                    "Surface",
+                    new[] { "Turf", "Dirt" },
+                    new[] { "2", "8" });
+
+                DrawAptRow(g, headFont, valueFont, center, border,
+                    ax, ay + aRowH, aLabelW, aCellsW, aRowH,
+                    "Distance",
+                    new[] { "Sprint", "Mile", "Medium", "Long" },
+                    new[] { "7", "4", "2", "4" });
+
+                DrawAptRow(g, headFont, valueFont, center, border,
+                    ax, ay + aRowH * 2, aLabelW, aCellsW, aRowH,
+                    "Strategy",
+                    new[] { "Front", "Pace", "Late", "End" },
+                    new[] { "8", "8", "3", "2" });
+            }
+        }
+
+        private void DrawAptRow(
+            Graphics g,
+            Font headFont,
+            Font valueFont,
+            StringFormat center,
+            Pen border,
+            float x,
+            float y,
+            float labelW,
+            float cellsW,
+            float rowH,
+            string rowName,
+            string[] headers,
+            string[] values)
+        {
+            // Row name, centered in the shaded column
+            DrawText(g, rowName, headFont, center, x, y, labelW, rowH);
+
+            float cellW = cellsW / headers.Length;
+
+            for (int i = 0; i < headers.Length; i++)
+            {
+                float cx = x + labelW + i * cellW;
+
+                // separator between cells in this row
+                if (i > 0)
+                {
+                    g.DrawLine(border, cx, y, cx, y + rowH);
+                }
+
+                // name on top, number below
+                DrawText(g, headers[i], headFont, center, cx, y + 6, cellW, 22);
+                DrawText(g, values[i], valueFont, center, cx, y + 28, cellW, 26);
+            }
+        }
+
+        private GraphicsPath RoundedRect(RectangleF r, float radius)
+        {
+            float d = radius * 2;
+
+            GraphicsPath path = new GraphicsPath();
+
+            path.AddArc(r.X, r.Y, d, d, 180, 90);
+            path.AddArc(r.Right - d, r.Y, d, d, 270, 90);
+            path.AddArc(r.Right - d, r.Bottom - d, d, d, 0, 90);
+            path.AddArc(r.X, r.Bottom - d, d, d, 90, 90);
+            path.CloseFigure();
+
+            return path;
+        }
+
+        private void DrawText(
+            Graphics g,
+            string text,
+            Font font,
+            StringFormat format,
+            float x,
+            float y,
+            float width,
+            float height)
+        {
+            // soft shadow
+            g.DrawString(
+                text,
+                font,
+                Brushes.Black,
+                new RectangleF(x + 1, y + 1, width, height),
+                format
+            );
+
+            // main text
+            g.DrawString(
+                text,
+                font,
+                Brushes.White,
+                new RectangleF(x, y, width, height),
+                format
+            );
         }
 
         // =========================
