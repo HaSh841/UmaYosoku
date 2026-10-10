@@ -72,23 +72,6 @@ namespace UmaYosoku
             // DASHBOARD PANEL
             // =========================
 
-            Dashboard dashboard =
-                new Dashboard();
-
-            dashboard.Size =
-                new Size(250, 400);
-
-            dashboard.Location = new Point(
-                (pictureBox.ClientSize.Width -
-                 dashboard.Width) / 2,
-
-                (pictureBox.ClientSize.Height -
-                 dashboard.Height) / 2
-            );
-
-            pictureBox.Controls.Add(dashboard);
-
-            dashboard.BringToFront();
         }
     }
 }
