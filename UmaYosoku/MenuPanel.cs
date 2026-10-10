@@ -61,7 +61,7 @@ namespace UmaYosoku
             title.AutoSize = false;
             title.TextAlign = ContentAlignment.MiddleCenter;
             title.Size = new Size(this.Width, 60);
-            title.Location = new Point(0, 150);
+            title.Location = new Point(0, 170);
 
             // =========================
             // ADD BUTTONS
