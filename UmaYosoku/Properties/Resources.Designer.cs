@@ -113,9 +113,29 @@ namespace UmaYosoku.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap agnes_ag {
+            get {
+                object obj = ResourceManager.GetObject("agnes_ag", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Agnes_Digital_29 {
             get {
                 object obj = ResourceManager.GetObject("Agnes_Digital_29", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap agnes_digital_data {
+            get {
+                object obj = ResourceManager.GetObject("agnes_digital_data", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
