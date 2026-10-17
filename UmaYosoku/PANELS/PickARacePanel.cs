@@ -12,6 +12,20 @@ namespace UmaYosoku.PANELS
 {
     public partial class PickARacePanel : Form
     {
+        // =========================
+        // PARALLAX SETTINGS
+        // =========================
+
+        private const int BgMargin = 40;
+        private const float BgStrength = 25f;      // keep < BgMargin
+        private const float PanelStrength = 12f;
+        private const float Smoothing = 0.12f;
+
+        private PictureBox picBox;
+        private RaceOverlayPanel overlay;
+        private System.Windows.Forms.Timer parallaxTimer;
+        private float curBgX, curBgY, curPanelX, curPanelY;
+
         // Reference to the original Form1
         private Form1 mainForm;
 
@@ -50,53 +64,47 @@ namespace UmaYosoku.PANELS
 
             // =========================
             // BACKGROUND IMAGE
+            // (oversized and NOT docked, so it can move)
             // =========================
 
-            PictureBox picBox =
-                new PictureBox();
+            picBox = new PictureBox();
 
             picBox.Image =
                 Properties.Resources.oguri2;
 
-            picBox.Dock =
-                DockStyle.Fill;
-
             picBox.SizeMode =
                 PictureBoxSizeMode.StretchImage;
 
+            picBox.Size = new Size(
+                this.ClientSize.Width + BgMargin * 2,
+                this.ClientSize.Height + BgMargin * 2
+            );
+
+            picBox.Location =
+                new Point(-BgMargin, -BgMargin);
+
             this.Controls.Add(picBox);
 
-            
             // =========================
             // SEMI-TRANSPARENT PANEL
             // =========================
 
-            RaceOverlayPanel overlay =
+            overlay =
                 new RaceOverlayPanel();
 
             overlay.Size =
                 new Size(1200, 620);
-
-            overlay.Location = new Point(
-                (this.ClientSize.Width -
-                 overlay.Width) / 2,
-
-                (this.ClientSize.Height -
-                 overlay.Height) / 2
-            );
 
             picBox.Controls.Add(overlay);
 
             overlay.BringToFront();
 
             // admire groove
-
             AdmireGroove admire = new AdmireGroove();
             admire.Location = new Point(40, 30);
             overlay.Controls.Add(admire);
 
             // admire vega
-
             AdmireVega vega = new AdmireVega();
             vega.Location = new Point(admire.Right + 10, 30);
             overlay.Controls.Add(vega);
@@ -104,7 +112,6 @@ namespace UmaYosoku.PANELS
             vega.BringToFront();
 
             // agnes digital
-
             AgnesDigital digital = new AgnesDigital();
             digital.Location = new Point(vega.Right + 10, 30);
             overlay.Controls.Add(digital);
@@ -112,7 +119,6 @@ namespace UmaYosoku.PANELS
             digital.BringToFront();
 
             // special week
-
             SpecialWeek week = new SpecialWeek();
             week.Location = new Point(digital.Right + 10, 30);
             overlay.Controls.Add(week);
@@ -120,7 +126,6 @@ namespace UmaYosoku.PANELS
             week.BringToFront();
 
             // silence suzuka
-
             SilenceSuzuka silence = new SilenceSuzuka();
             silence.Location = new Point(week.Right + 10, 30);
             overlay.Controls.Add(silence);
@@ -128,7 +133,6 @@ namespace UmaYosoku.PANELS
             silence.BringToFront();
 
             // tokai teio
-
             TokaiTeio hachimi = new TokaiTeio();
             hachimi.Location = new Point(silence.Right + 10, 30);
             overlay.Controls.Add(hachimi);
@@ -136,7 +140,6 @@ namespace UmaYosoku.PANELS
             hachimi.BringToFront();
 
             // maruzensky
-
             Maruzensky maru = new Maruzensky();
             maru.Location = new Point(hachimi.Right + 10, 30);
             overlay.Controls.Add(maru);
@@ -144,7 +147,6 @@ namespace UmaYosoku.PANELS
             maru.BringToFront();
 
             // fuji kiseki
-
             FujiKiseki kiseki = new FujiKiseki();
             kiseki.Location = new Point(maru.Right + 10, 30);
             overlay.Controls.Add(kiseki);
@@ -152,7 +154,6 @@ namespace UmaYosoku.PANELS
             kiseki.BringToFront();
 
             // oguri cap
-
             OguriCap oguri = new OguriCap();
             oguri.Location = new Point(kiseki.Right + 10, 30);
             overlay.Controls.Add(oguri);
@@ -160,7 +161,6 @@ namespace UmaYosoku.PANELS
             oguri.BringToFront();
 
             // gold ship
-
             GoldShip gold = new GoldShip();
             gold.Location = new Point(oguri.Right + 10, 30);
             overlay.Controls.Add(gold);
@@ -168,7 +168,6 @@ namespace UmaYosoku.PANELS
             gold.BringToFront();
 
             // vodka
-
             Vodka vodka = new Vodka();
             vodka.Location = new Point(gold.Right + 10, 30);
             overlay.Controls.Add(vodka);
@@ -176,7 +175,6 @@ namespace UmaYosoku.PANELS
             vodka.BringToFront();
 
             // daiwa scarlet
-
             DaiwaScarlet daiwa = new DaiwaScarlet();
             daiwa.Location = new Point(vodka.Right + 10, 30);
             overlay.Controls.Add(daiwa);
@@ -205,13 +203,11 @@ namespace UmaYosoku.PANELS
             hishi.BringToFront();
 
             // mejiro mcqueen
-
             MejiroMcQueen mejiro = new MejiroMcQueen();
             mejiro.Location = new Point(40, 100);
             overlay.Controls.Add(mejiro);
 
             // el condor pasa
-
             ElCondorPasa pasa = new ElCondorPasa();
             pasa.Location = new Point(mejiro.Right + 10, 100);
             overlay.Controls.Add(pasa);
@@ -533,7 +529,7 @@ namespace UmaYosoku.PANELS
 
             kingHalo.BringToFront();
 
-            // mantikanetannhauser
+            // matikanetannhauser
             Matikanetannhauser matikanetannhauser = new Matikanetannhauser();
             matikanetannhauser.Location = new Point(kingHalo.Right + 10, 310);
             overlay.Controls.Add(matikanetannhauser);
@@ -718,10 +714,92 @@ namespace UmaYosoku.PANELS
             overlay.Controls.Add(backBtn);
 
             backBtn.BringToFront();
+
+            // =========================
+            // PARALLAX TIMER
+            // =========================
+
+            this.DoubleBuffered = true;
+
+            UpdatePositions();
+
+            parallaxTimer = new System.Windows.Forms.Timer();
+            parallaxTimer.Interval = 16; // ~60 FPS
+            parallaxTimer.Tick += ParallaxTimer_Tick;
+            parallaxTimer.Start();
         }
 
+        // =========================
+        // PARALLAX UPDATE
+        // =========================
 
-        
+        private void ParallaxTimer_Tick(object sender, EventArgs e)
+        {
+            Point mouse = this.PointToClient(Cursor.Position);
+
+            float halfW = this.ClientSize.Width / 2f;
+            float halfH = this.ClientSize.Height / 2f;
+
+            float nx = Math.Max(-1f, Math.Min(1f, (mouse.X - halfW) / halfW));
+            float ny = Math.Max(-1f, Math.Min(1f, (mouse.Y - halfH) / halfH));
+
+            // Background moves opposite (far), panel moves with cursor (close)
+            curBgX += (-nx * BgStrength - curBgX) * Smoothing;
+            curBgY += (-ny * BgStrength - curBgY) * Smoothing;
+            curPanelX += (nx * PanelStrength - curPanelX) * Smoothing;
+            curPanelY += (ny * PanelStrength - curPanelY) * Smoothing;
+
+            UpdatePositions();
+        }
+
+        private void UpdatePositions()
+        {
+            Point bgPos = new Point(
+                (int)Math.Round(-BgMargin + curBgX),
+                (int)Math.Round(-BgMargin + curBgY)
+            );
+
+            if (picBox.Location != bgPos)
+            {
+                picBox.Location = bgPos;
+            }
+
+            int panelFormX = (this.ClientSize.Width - overlay.Width) / 2
+                             + (int)Math.Round(curPanelX);
+
+            int panelFormY = (this.ClientSize.Height - overlay.Height) / 2
+                             + (int)Math.Round(curPanelY);
+
+            Point panelPos = new Point(
+                panelFormX - picBox.Left,
+                panelFormY - picBox.Top
+            );
+
+            // Only move when the pixel position actually changed (less flicker)
+            if (overlay.Location != panelPos)
+            {
+                overlay.Location = panelPos;
+            }
+        }
+
+        // Draw the whole form in one pass (reduces flicker with many buttons)
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000; // WS_EX_COMPOSITED
+                return cp;
+            }
+        }
+
+        protected override void OnFormClosed(FormClosedEventArgs e)
+        {
+            parallaxTimer?.Stop();
+            parallaxTimer?.Dispose();
+            base.OnFormClosed(e);
+        }
+
         // =========================
         // BACK BUTTON
         // =========================
