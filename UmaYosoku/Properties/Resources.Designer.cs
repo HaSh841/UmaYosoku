@@ -123,6 +123,16 @@ namespace UmaYosoku.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap agnes_asset {
+            get {
+                object obj = ResourceManager.GetObject("agnes_asset", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Agnes_Digital_29 {
             get {
                 object obj = ResourceManager.GetObject("Agnes_Digital_29", resourceCulture);
@@ -146,6 +156,16 @@ namespace UmaYosoku.Properties {
         internal static System.Drawing.Bitmap Agnes_Tachyon {
             get {
                 object obj = ResourceManager.GetObject("Agnes_Tachyon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap agnesgif {
+            get {
+                object obj = ResourceManager.GetObject("agnesgif", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
