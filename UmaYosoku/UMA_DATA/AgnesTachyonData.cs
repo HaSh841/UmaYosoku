@@ -14,10 +14,17 @@ namespace UmaYosoku.UMA_DATA
     public partial class AgnesTachyonData : Form
     {
         private SoundPlayer sfx;
+        private SoundPlayer bgm;
         private PickARacePanel pick2;
 
         public AgnesTachyonData(PickARacePanel pick2)
         {
+
+            // bgm
+
+            bgm = new SoundPlayer(Properties.Resources.bgm_of_agnes);
+            bgm.PlayLooping();
+
             // =========================
             // STORE PREVIOUS FORM
             // =========================
@@ -27,6 +34,8 @@ namespace UmaYosoku.UMA_DATA
             // =========================
             // FORM SETTINGS
             // =========================
+
+            
 
             this.DoubleBuffered = true;
 
@@ -493,6 +502,17 @@ namespace UmaYosoku.UMA_DATA
 
             // Close this form
             this.Close();
+        }
+
+        protected override void OnFormClosed(FormClosedEventArgs e)
+        {
+            if(bgm != null)
+            {
+                bgm.Stop();
+                bgm.Dispose();
+            }
+
+            base.OnFormClosed(e);
         }
     }
 }
