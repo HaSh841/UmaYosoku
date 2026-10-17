@@ -11,6 +11,21 @@ namespace UmaYosoku
     public class MenuPanel : Panel
     {
         private SoundPlayer sfx;
+
+        // Controls kept as fields so they can float for the 3D effect
+        private PickARace btn1;
+        private PredictRace btn2;
+        private Label title;
+
+        // Resting positions (when the cursor is centered)
+        private readonly Point btn1Base = new Point(40, 250);
+        private readonly Point btn2Base = new Point(180, 250);
+        private readonly Point titleBase = new Point(0, 170);
+
+        // How much more than the panel each layer moves
+        private const float ButtonDepth = 0.8f;
+        private const float TitleDepth = 1.2f;
+
         public MenuPanel()
         {
             // =========================
@@ -29,11 +44,11 @@ namespace UmaYosoku
             // PICK A RACE BUTTON
             // =========================
 
-            PickARace btn1 =
+            btn1 =
                 new PickARace();
 
             btn1.Location =
-                new Point(40, 250);
+                btn1Base;
 
             sfx = new SoundPlayer(Properties.Resources.sfx1);
 
@@ -45,23 +60,23 @@ namespace UmaYosoku
             // PREDICT RACE BUTTON
             // =========================
 
-            PredictRace btn2 =
+            btn2 =
                 new PredictRace();
 
             btn2.Location =
-                new Point(180, 250);
+                btn2Base;
 
             // title label
 
-            Label title = new Label();
-            title.Text= "Welcome to UmaYosoku!";
+            title = new Label();
+            title.Text = "Welcome to UmaYosoku!";
             title.Font = new Font("Segoe UI", 10, FontStyle.Bold);
             title.ForeColor = Color.White;
             title.BackColor = Color.Transparent;
             title.AutoSize = false;
             title.TextAlign = ContentAlignment.MiddleCenter;
             title.Size = new Size(this.Width, 60);
-            title.Location = new Point(0, 170);
+            title.Location = titleBase;
 
             // =========================
             // ADD BUTTONS
@@ -70,6 +85,24 @@ namespace UmaYosoku
             this.Controls.Add(btn1);
             this.Controls.Add(btn2);
             this.Controls.Add(title);
+        }
+
+        // =========================
+        // 3D DEPTH OFFSET
+        // Called by Form1 every frame
+        // =========================
+
+        public void SetDepthOffset(float x, float y)
+        {
+            int bx = (int)System.Math.Round(x * ButtonDepth);
+            int by = (int)System.Math.Round(y * ButtonDepth);
+
+            int tx = (int)System.Math.Round(x * TitleDepth);
+            int ty = (int)System.Math.Round(y * TitleDepth);
+
+            btn1.Location = new Point(btn1Base.X + bx, btn1Base.Y + by);
+            btn2.Location = new Point(btn2Base.X + bx, btn2Base.Y + by);
+            title.Location = new Point(titleBase.X + tx, titleBase.Y + ty);
         }
 
         // =========================
@@ -89,7 +122,7 @@ namespace UmaYosoku
                 return;
             }
 
-           
+
 
             // Create PickARacePanel
             PickARacePanel pick =
