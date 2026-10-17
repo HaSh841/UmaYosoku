@@ -163,6 +163,9 @@
   <data name="Bamboo_Memory" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Bamboo_Memory.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bgm_of_agnes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bgm_of_agnes.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Biko_Pegasus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Biko_Pegasus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
