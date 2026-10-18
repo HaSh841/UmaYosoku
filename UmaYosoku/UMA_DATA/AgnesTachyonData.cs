@@ -27,8 +27,7 @@ namespace UmaYosoku.UMA_DATA
         private System.Windows.Forms.Timer parallaxTimer;
         private float curBgX, curBgY, curPanelX, curPanelY;
 
-        private SoundPlayer sfx;
-        private SoundPlayer bgm;
+        private LoopingMusic bgm;
         private PickARacePanel pick2;
 
         public AgnesTachyonData(PickARacePanel pick2)
@@ -36,8 +35,8 @@ namespace UmaYosoku.UMA_DATA
 
             // bgm
 
-            bgm = new SoundPlayer(Properties.Resources.bgm_of_agnes);
-            bgm.PlayLooping();
+            bgm = new LoopingMusic(Properties.Resources.bgm_of_agnes);
+            bgm.Play();
 
             // =========================
             // STORE PREVIOUS FORM
@@ -72,14 +71,6 @@ namespace UmaYosoku.UMA_DATA
                 new MemoryStream(
                     Properties.Resources.oguri_icon
                 )
-            );
-
-            // =========================
-            // BACK BUTTON SFX
-            // =========================
-
-            sfx = new SoundPlayer(
-                Properties.Resources.sfx1
             );
 
             // =========================
@@ -569,8 +560,8 @@ namespace UmaYosoku.UMA_DATA
             object sender,
             EventArgs e)
         {
-            // Play back SFX
-            sfx.Play();
+            // Play back SFX (separate from the bgm, keeps playing after close)
+            Audio.PlaySfx(Properties.Resources.sfx1);
 
             // Show PickARacePanel
             if (pick2 != null)
@@ -588,11 +579,8 @@ namespace UmaYosoku.UMA_DATA
             parallaxTimer?.Stop();
             parallaxTimer?.Dispose();
 
-            if (bgm != null)
-            {
-                bgm.Stop();
-                bgm.Dispose();
-            }
+            // stops only the bgm, never the sfx
+            bgm?.Dispose();
 
             base.OnFormClosed(e);
         }
