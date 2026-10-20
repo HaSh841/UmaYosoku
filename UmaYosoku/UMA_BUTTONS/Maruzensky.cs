@@ -4,11 +4,15 @@ using System.Text;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
+using System.Media;
+using UmaYosoku.PANELS;
+using UmaYosoku.UMA_DATA;
 
 namespace UmaYosoku.UMA_BUTTONS
 {
     public class Maruzensky : System.Windows.Forms.Button
     {
+        private SoundPlayer sfx;
         public Maruzensky()
         {
             // button size
@@ -20,7 +24,7 @@ namespace UmaYosoku.UMA_BUTTONS
             this.Image = new Bitmap(Properties.Resources.Maruzensky_29, new Size(52, 52));
             this.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
-            // btn style
+            // button style
 
             this.FlatStyle = FlatStyle.Flat;
             this.FlatAppearance.BorderSize = 0;
@@ -29,8 +33,51 @@ namespace UmaYosoku.UMA_BUTTONS
             this.FlatAppearance.MouseOverBackColor = Color.Gray;
             this.FlatAppearance.MouseDownBackColor = Color.DimGray;
 
+            // no text
+
             this.Text = "";
+
+            // cursor
+
             this.Cursor = Cursors.Hand;
+
+            // sfx
+
+            sfx = new SoundPlayer(Properties.Resources.weei);
+
+            // click event
+
+            this.Click += Maruzensky_Click;
         }
+
+        private void Maruzensky_Click(object sender, EventArgs e)
+        {
+            // find pickarace panel
+
+            PickARacePanel pick6 = this.FindForm() as PickARacePanel;
+
+            if (pick6 == null)
+            {
+                MessageBox.Show("PickARacePanel was not found.");
+                return;
+            }
+            sfx.Play();
+
+            // create data form
+
+            MaruzenskyData data6 = new MaruzenskyData(pick6);
+
+            // hide race selcetion
+
+            pick6.Hide();
+
+            // show data form
+
+            data6.Show();
+
+            data6.BringToFront();
+            data6.Activate();
+        }
+
     }
 }

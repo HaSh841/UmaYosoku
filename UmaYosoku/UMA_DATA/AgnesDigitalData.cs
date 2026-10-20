@@ -133,7 +133,7 @@ namespace UmaYosoku.UMA_DATA
             // HORSE NAME (RIGHT OF PICTURE)
             // =========================
 
-            AddLabel(overlay, "Agnes Digital", 110, 60, 16);
+            AddLabel(overlay, "Agnes Digital", 110, 45, 16);
 
             // =========================
             // STATS LAYER (drawn above the overlay fill)
