@@ -1,0 +1,68 @@
+[33m45724c4[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m track large files
+[33m36b3f8d[m manhattan data
+[33m6f13135[m Row2 Finished
+[33mf2c3390[m 2Rows Complete
+[33m0dcc591[m added datas
+[33m113715a[m ADD FEW CHARACTERS DATA
+[33m86f41e5[m Merge pull request #19 from lumpia-sa-canteen/master
+[33m16bdacb[m fixed runtime error when pressing back button for special week data and added ui effect
+[33m80da083[m Merge pull request #18 from lumpia-sa-canteen/master
+[33mf2b936c[m improved ui for take me back back home panel
+[33md240960[m Merge pull request #17 from lumpia-sa-canteen/master
+[33m0df6047[m added bgm for agnes and fixed the ui smoothing
+[33m887d1e5[m Merge pull request #16 from lumpia-sa-canteen/master
+[33m158601c[m added data for agnes and improved ui on pick a horse
+[33m2220375[m Merge pull request #15 from lumpia-sa-canteen/master
+[33m007826a[m Merge branch 'master' of https://github.com/lumpia-sa-canteen/UmaYosoku
+[33m710480b[m improved ui for home screen
+[33m2a444d1[m Merge pull request #14 from lumpia-sa-canteen/master
+[33md74bec3[m Merge branch 'master' of https://github.com/lumpia-sa-canteen/UmaYosoku
+[33m9a0b69e[m added data for agnes digital
+[33m9b39f4a[m Merge pull request #13 from lumpia-sa-canteen/master
+[33m505bea9[m improved ui on data
+[33md1a539e[m Merge pull request #12 from lumpia-sa-canteen/master
+[33m313a160[m re positioned the buttons for home page and added title
+[33m65df99a[m Merge pull request #11 from lumpia-sa-canteen/master
+[33m8721a00[m remove the dashboard will make a different dashboard for predicting
+[33m2f6736e[m changed bg for admire vega
+[33mcc24152[m Merge pull request #10 from lumpia-sa-canteen/master
+[33m5ede75f[m Merge branch 'master' of https://github.com/lumpia-sa-canteen/UmaYosoku
+[33m31c9510[m added data but ui is bad will fix later
+[33mc783191[m Merge pull request #9 from lumpia-sa-canteen/master
+[33md93a873[m Merge branch 'master' of https://github.com/lumpia-sa-canteen/UmaYosoku
+[33m7ee8411[m added panel for admire vega
+[33m150cafc[m Merge pull request #8 from lumpia-sa-canteen/master
+[33m9aa3a7e[m added new sfx for the data
+[33mf4226f4[m Merge pull request #7 from lumpia-sa-canteen/master
+[33m576dfce[m Added panel no data yet
+[33mfd4a0e5[m all characters
+[33m6a3e6e4[m added characters button
+[33mba085c0[m Merge pull request #6 from lumpia-sa-canteen/master
+[33m86aadcf[m added gold ship btn
+[33mb3d2fe1[m added oguri cap btn
+[33m2da6d16[m Merge pull request #5 from lumpia-sa-canteen/master
+[33m44f406d[m added fuji kiseki btn
+[33medd8754[m added maruzensky btn
+[33m17118c2[m Merge branch 'master' of https://github.com/lumpia-sa-canteen/UmaYosoku
+[33m5c77237[m added hachimi
+[33m99ef8a4[m Merge pull request #4 from lumpia-sa-canteen/master
+[33m0edf155[m Merge branch 'master' of https://github.com/lumpia-sa-canteen/UmaYosoku
+[33me49589f[m added new character silence suzuka
+[33m79f0934[m Merge branch 'HaSh841:master' into master
+[33ma2d6674[m fixed spe chan background png
+[33mc60f4a9[m Merge pull request #3 from lumpia-sa-canteen/master
+[33m3cb43c5[m added new character
+[33mf4675ba[m added new character
+[33me429bb8[m Merge pull request #2 from lumpia-sa-canteen/master
+[33maf04a33[m added new character
+[33m1223639[m Added new folders and  a character
+[33m51c4dcf[m new sfx functions
+[33m09dad51[m remove the bg music from main screen and replaced with sfx when buttons are clicked
+[33m7ce09a6[m README
+[33m2e9630c[m fixed some irregularities
+[33m68574cf[m fixed the ui and the buttons and menu panel disappearing on form1
+[33m2c83073[m added ui on pick a race panel
+[33m1a25c9e[m "c
+[33mb9350d6[m comment ra
+[33ma83ffd5[m Add project files.
+[33m9f1b677[m Add .gitattributes, .gitignore, and README.md.
