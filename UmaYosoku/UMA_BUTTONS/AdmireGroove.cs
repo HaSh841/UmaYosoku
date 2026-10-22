@@ -1,0 +1,65 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Drawing;
+using System.Windows.Forms;
+using UmaYosoku.PANELS;
+using UmaYosoku.UMA_DATA;
+using System.Media;
+
+namespace UmaYosoku.UMA_BUTTONS
+{
+    public class AdmireGroove : System.Windows.Forms.Button
+
+    {
+        private SoundPlayer sfx;
+        public AdmireGroove()
+        {
+            // button size
+
+            this.Size = new Size(65, 65);
+
+            // image
+
+            this.Image = new Bitmap(Properties.Resources.Admire_Groove_29, new Size(52, 52));
+
+            this.ImageAlign = ContentAlignment.MiddleCenter;
+
+            // button style
+
+            this.FlatStyle = FlatStyle.Flat;
+            this.FlatAppearance.BorderSize = 0;
+            this.FlatAppearance.BorderColor = Color.White;
+            this.BackColor = Color.Transparent;
+            this.FlatAppearance.MouseOverBackColor = Color.Gray;
+            this.FlatAppearance.MouseDownBackColor = Color.DimGray;
+
+            // no text
+
+            this.Text = "";
+            
+            // cursor
+
+            this.Cursor = Cursors.Hand;
+
+            // action listener
+
+            this.Click += AdmireGroove_Click;
+
+            sfx = new SoundPlayer(Properties.Resources.weei);
+        }
+
+        private void AdmireGroove_Click(object sender, EventArgs e)
+        {
+            PickARacePanel pick = this.FindForm() as PickARacePanel;
+
+            if (pick == null) return;
+
+            AdmireGrooveData data = new AdmireGrooveData(pick);
+
+            pick.Hide();
+            data.Show();
+            sfx.Play();
+        }
+    }
+}

@@ -1,0 +1,595 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="admire-vega-bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\admire-vega-bg.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="admire_admire" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\admire_admire.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Admire_Groove_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Admire_Groove_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Admire_Vega" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Admire_Vega.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Admire_Vega_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Admire_Vega_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agnesgif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\agnesgif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agnes_ag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\agnes_ag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agnes_asset" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\agnes_asset.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Agnes_Digital_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Agnes_Digital_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agnes_digital_data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\agnes_digital_data.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Agnes_Tachyon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Agnes_Tachyon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="air_air" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\air_air.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Air_Groove_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Air_Groove_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="air_groove_gif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\air_groove_gif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Air_Shakur" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Air_Shakur.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Aston_Machan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Aston_Machan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bamboo_Memory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bamboo_Memory.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bgm_of_agnes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bgm_of_agnes.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Biko_Pegasus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Biko_Pegasus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BiwaHayahideGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BiwaHayahideGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BiwaHayahideProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BiwaHayahideProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Biwa_Hayahide" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Biwa_Hayahide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BRIGHTEST HEART" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BRIGHTEST HEART.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Copano_Rickey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Copano_Rickey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Curren_Chan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Curren_Chan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Daiichi_Ruby" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Daiichi_Ruby.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Daitaku_Helios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Daitaku_Helios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DaiwaScarletGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DaiwaScarletGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DaiwaScarletProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DaiwaScarletProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Daiwa_Scarlet_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Daiwa_Scarlet_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eishin_Flash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Eishin_Flash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ElCondorPasaGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ElCondorPasaGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ElCondorPasaProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ElCondorPasaProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="El_Condor_Pasa_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\El_Condor_Pasa_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FineMotionGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FineMotionGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FineMotionProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FineMotionProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fine_Motion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fine_Motion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FujiKisekiGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FujiKisekiGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FujiKisekiProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FujiKisekiProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fuji_Kiseki_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fuji_Kiseki_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GoldShipGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GoldShipGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GoldShipProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GoldShipProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gold_City" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gold_City.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gold_Ship_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gold_Ship_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GrassWonderGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GrassWonderGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GrassWonderProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GrassWonderProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Grass_Wonder_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Grass_Wonder_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hachimiMusic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hachimiMusic.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Haru_Urara" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Haru_Urara.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HishiAkebonoGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HishiAkebonoGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HishiAkebonoProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HishiAkebonoProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HishiAmazonGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HishiAmazonGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HishiAmazonProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HishiAmazonProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hishi_Akebono" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hishi_Akebono.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hishi_Amazon_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hishi_Amazon_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ikuno_Dictus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ikuno_Dictus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Inari_One" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Inari_One.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ines_Fujin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ines_Fujin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kawakami_Princess" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kawakami_Princess.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="King_Halo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\King_Halo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kitasan_Black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kitasan_Black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KS_Miracle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KS_Miracle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ManhattanCafeGiff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ManhattanCafeGiff.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ManhattanCafeProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ManhattanCafeProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Manhattan_Cafe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Manhattan_Cafe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MaruzenskyGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MaruzenskyGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MaruzenskyProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MaruzenskyProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Maruzensky_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Maruzensky_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Marvelous_Sunday" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Marvelous_Sunday.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Matikanefukukitaru" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Matikanefukukitaru.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Matikanetannhauser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Matikanetannhauser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MayanoTopGunGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MayanoTopGunGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MayanoTopGunProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MayanoTopGunProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mayano_Top_Gun" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mayano_Top_Gun.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Meisho_Doto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Meisho_Doto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MejiroMcQueenGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MejiroMcQueenGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MejiroMcQueenProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MejiroMcQueenProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MejiroRyanGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MejiroRyanGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MejiroRyanProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MejiroRyanProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mejiro_Ardan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mejiro_Ardan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mejiro_Bright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mejiro_Bright.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mejiro_Dober" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mejiro_Dober.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mejiro_McQueen_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mejiro_McQueen_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mejiro_Palmer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mejiro_Palmer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mejiro_Ryan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mejiro_Ryan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MihonoBourbon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MihonoBourbon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MihonoBourbonGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MihonoBourbonGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MihonoBourbonProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MihonoBourbonProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mr_CB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mr_CB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Nakayama_Festa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Nakayama_Festa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NaritaBrianGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NaritaBrianGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NaritaBrianProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NaritaBrianProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Narita_Brian_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Narita_Brian_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Narita_Taishin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Narita_Taishin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Narita_Top_Road" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Narita_Top_Road.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Nice_Nature" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Nice_Nature.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Nishino_Flower" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Nishino_Flower.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="oguri-cap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\oguri-cap.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="oguri-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\oguri-icon.ico;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="oguri2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\oguri2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OguriCapGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OguriCapGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OguriCapGif2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OguriCapGif2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OguriCapProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OguriCapProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OguriMusic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OguriMusic.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Oguri_Cap_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Oguri_Cap_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rice_Shower" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rice_Shower.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sakura_Bakushin_O" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sakura_Bakushin_O.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sakura_Chiyono_O" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sakura_Chiyono_O.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sakura_Laurel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sakura_Laurel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Satono_Diamond" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Satono_Diamond.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Seeking_The_Pearl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Seeking_The_Pearl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SeiunSkyGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SeiunSkyGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SeiunSkyProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SeiunSkyProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Seiun_Sky" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Seiun_Sky.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sfx1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sfx1.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Shinko_Windy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shinko_Windy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SilenceSuzukaGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SilenceSuzukaGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SilenceSuzukaProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SilenceSuzukaProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Silence_Suzuka_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Silence_Suzuka_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sirius_Symboli" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sirius_Symboli.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Smart_Falcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Smart_Falcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Special_Week_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Special_Week_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spespe_chan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\spespe_chan.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spe_chan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\spe_chan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="still_in_love" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\still_in_love.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Super_Creek" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Super_Creek.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sweep_Tosho" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sweep_Tosho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SymboliRudolfGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SymboliRudolfGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SymboliRudolfProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SymboliRudolfProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Symboli_Kris_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Symboli_Kris_S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Symboli_Rudolf_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Symboli_Rudolf_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="T.M._Opera_O_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\T.M._Opera_O_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaikiShuttleGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TaikiShuttleGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaikiShuttleProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TaikiShuttleProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Taiki_Shuttle_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Taiki_Shuttle_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TamamoCrossProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TamamoCrossProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TamamoGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TamamoGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TamamoMusic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TamamoMusic.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Tamamo_Cross" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tamamo_Cross.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tanino_Gimlet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tanino_Gimlet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TMOperaOGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TMOperaOGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TMOperaOProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TMOperaOProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TokaiTeioGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TokaiTeioGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TokaiTeioProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TokaiTeioProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tokai_Teio_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tokai_Teio_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tosen_Jordan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tosen_Jordan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tsurumaru_Tsuyoshi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tsurumaru_Tsuyoshi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Twin_Turbo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Twin_Turbo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VodkaGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VodkaGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VodkaProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VodkaProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Vodka_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Vodka_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weei" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weei.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Winning_Ticket" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Winning_Ticket.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wonder_Acute" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wonder_Acute.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Yaeno_Muteki" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Yaeno_Muteki.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Yamanin_Zephyr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Yamanin_Zephyr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Yukino_Bijin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Yukino_Bijin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zenno_Rob_Roy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Zenno_Rob_Roy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
