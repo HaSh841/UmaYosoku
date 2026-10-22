@@ -27,17 +27,13 @@ namespace UmaYosoku.UMA_DATA
         private System.Windows.Forms.Timer parallaxTimer;
         private float curBgX, curBgY, curPanelX, curPanelY;
 
-        private LoopingMusic bgm;
+        private SoundPlayer sfx;
 
         private PickARacePanel pick24;
 
         public ManhattanCafeData(PickARacePanel pick24)
         {
 
-            // bgm
-
-            bgm = new LoopingMusic(Properties.Resources.ManhattanCafeMusic);
-            bgm.Play();
 
 
 
@@ -76,7 +72,14 @@ namespace UmaYosoku.UMA_DATA
                 )
             );
 
-         
+            // =========================
+            // BACK BUTTON SFX
+            // =========================
+
+            sfx = new SoundPlayer(
+                Properties.Resources.sfx1
+            );
+
             // =========================
             // BACKGROUND
             // (oversized and NOT docked, so it can move)
@@ -86,7 +89,7 @@ namespace UmaYosoku.UMA_DATA
                 new PictureBox();
 
             picBox.Image =
-                Properties.Resources.ManhattanCafeGif;
+                Properties.Resources.ManhattanCafeGiff;
 
             picBox.SizeMode =
                 PictureBoxSizeMode.StretchImage;
@@ -127,7 +130,7 @@ namespace UmaYosoku.UMA_DATA
                 new PictureBox();
 
             horsePic.Size =
-                new Size(80, 80);   
+                new Size(80, 80);
 
             horsePic.Location =
                 new Point(18, 15);
@@ -567,11 +570,11 @@ namespace UmaYosoku.UMA_DATA
         // =========================
 
         private void BackButton_Click(
-              object sender,
-              EventArgs e)
+            object sender,
+            EventArgs e)
         {
-            // Play back SFX (separate from the bgm, keeps playing after close)
-            Audio.PlaySfx(Properties.Resources.sfx1);
+            // Play back SFX
+            sfx.Play();
 
             // Show PickARacePanel
             if (pick24 != null)
@@ -592,8 +595,6 @@ namespace UmaYosoku.UMA_DATA
         {
             parallaxTimer?.Stop();
             parallaxTimer?.Dispose();
-            // stops only the bgm, never the sfx
-            bgm?.Dispose();
             base.OnFormClosed(e);
         }
     }

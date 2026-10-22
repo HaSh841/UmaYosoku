@@ -690,19 +690,10 @@ namespace UmaYosoku.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ManhattanCafeGif {
+        internal static System.Drawing.Bitmap ManhattanCafeGiff {
             get {
-                object obj = ResourceManager.GetObject("ManhattanCafeGif", resourceCulture);
+                object obj = ResourceManager.GetObject("ManhattanCafeGiff", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        internal static System.IO.UnmanagedMemoryStream ManhattanCafeMusic {
-            get {
-                return ResourceManager.GetStream("ManhattanCafeMusic", resourceCulture);
             }
         }
         
