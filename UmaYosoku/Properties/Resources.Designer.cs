@@ -301,6 +301,26 @@ namespace UmaYosoku.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DaiwaScarletGif {
+            get {
+                object obj = ResourceManager.GetObject("DaiwaScarletGif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DaiwaScarletProfile {
+            get {
+                object obj = ResourceManager.GetObject("DaiwaScarletProfile", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Eishin_Flash {
             get {
                 object obj = ResourceManager.GetObject("Eishin_Flash", resourceCulture);
@@ -314,6 +334,26 @@ namespace UmaYosoku.Properties {
         internal static System.Drawing.Bitmap El_Condor_Pasa_29 {
             get {
                 object obj = ResourceManager.GetObject("El_Condor_Pasa_29", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ElCondorPasaGif {
+            get {
+                object obj = ResourceManager.GetObject("ElCondorPasaGif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ElCondorPasaProfile {
+            get {
+                object obj = ResourceManager.GetObject("ElCondorPasaProfile", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -381,9 +421,49 @@ namespace UmaYosoku.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap GoldShipGif {
+            get {
+                object obj = ResourceManager.GetObject("GoldShipGif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GoldShipProfile {
+            get {
+                object obj = ResourceManager.GetObject("GoldShipProfile", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Grass_Wonder_29 {
             get {
                 object obj = ResourceManager.GetObject("Grass_Wonder_29", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GrassWonderGif {
+            get {
+                object obj = ResourceManager.GetObject("GrassWonderGif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GrassWonderProfile {
+            get {
+                object obj = ResourceManager.GetObject("GrassWonderProfile", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -423,6 +503,26 @@ namespace UmaYosoku.Properties {
         internal static System.Drawing.Bitmap Hishi_Amazon_29 {
             get {
                 object obj = ResourceManager.GetObject("Hishi_Amazon_29", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HishiAmazonGif {
+            get {
+                object obj = ResourceManager.GetObject("HishiAmazonGif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HishiAmazonProfile {
+            get {
+                object obj = ResourceManager.GetObject("HishiAmazonProfile", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -650,6 +750,26 @@ namespace UmaYosoku.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap MejiroMcQueenGif {
+            get {
+                object obj = ResourceManager.GetObject("MejiroMcQueenGif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MejiroMcQueenProfile {
+            get {
+                object obj = ResourceManager.GetObject("MejiroMcQueenProfile", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MihonoBourbon {
             get {
                 object obj = ResourceManager.GetObject("MihonoBourbon", resourceCulture);
@@ -703,6 +823,26 @@ namespace UmaYosoku.Properties {
         internal static System.Drawing.Bitmap Narita_Top_Road {
             get {
                 object obj = ResourceManager.GetObject("Narita_Top_Road", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NaritaBrianGif {
+            get {
+                object obj = ResourceManager.GetObject("NaritaBrianGif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NaritaBrianProfile {
+            get {
+                object obj = ResourceManager.GetObject("NaritaBrianProfile", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1028,6 +1168,26 @@ namespace UmaYosoku.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap SymboliRudolfGif {
+            get {
+                object obj = ResourceManager.GetObject("SymboliRudolfGif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SymboliRudolfProfile {
+            get {
+                object obj = ResourceManager.GetObject("SymboliRudolfProfile", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap T_M__Opera_O_29 {
             get {
                 object obj = ResourceManager.GetObject("T.M._Opera_O_29", resourceCulture);
@@ -1048,6 +1208,26 @@ namespace UmaYosoku.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TaikiShuttleGif {
+            get {
+                object obj = ResourceManager.GetObject("TaikiShuttleGif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TaikiShuttleProfile {
+            get {
+                object obj = ResourceManager.GetObject("TaikiShuttleProfile", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Tamamo_Cross {
             get {
                 object obj = ResourceManager.GetObject("Tamamo_Cross", resourceCulture);
@@ -1061,6 +1241,26 @@ namespace UmaYosoku.Properties {
         internal static System.Drawing.Bitmap Tanino_Gimlet {
             get {
                 object obj = ResourceManager.GetObject("Tanino_Gimlet", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TMOperaOGif {
+            get {
+                object obj = ResourceManager.GetObject("TMOperaOGif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TMOperaOProfile {
+            get {
+                object obj = ResourceManager.GetObject("TMOperaOProfile", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1131,6 +1331,26 @@ namespace UmaYosoku.Properties {
         internal static System.Drawing.Bitmap Vodka_29 {
             get {
                 object obj = ResourceManager.GetObject("Vodka_29", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap VodkaGif {
+            get {
+                object obj = ResourceManager.GetObject("VodkaGif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap VodkaProfile {
+            get {
+                object obj = ResourceManager.GetObject("VodkaProfile", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

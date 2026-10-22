@@ -187,11 +187,23 @@
   <data name="Daitaku_Helios" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Daitaku_Helios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="DaiwaScarletGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DaiwaScarletGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DaiwaScarletProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DaiwaScarletProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Daiwa_Scarlet_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Daiwa_Scarlet_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Eishin_Flash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Eishin_Flash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ElCondorPasaGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ElCondorPasaGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ElCondorPasaProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ElCondorPasaProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="El_Condor_Pasa_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\El_Condor_Pasa_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,11 +220,23 @@
   <data name="Fuji_Kiseki_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fuji_Kiseki_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="GoldShipGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GoldShipGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GoldShipProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GoldShipProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Gold_City" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gold_City.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Gold_Ship_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gold_Ship_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GrassWonderGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GrassWonderGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GrassWonderProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GrassWonderProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Grass_Wonder_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Grass_Wonder_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -222,6 +246,12 @@
   </data>
   <data name="Haru_Urara" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Haru_Urara.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HishiAmazonGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HishiAmazonGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HishiAmazonProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HishiAmazonProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Hishi_Akebono" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Hishi_Akebono.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -277,6 +307,12 @@
   <data name="Meisho_Doto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Meisho_Doto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="MejiroMcQueenGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MejiroMcQueenGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MejiroMcQueenProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MejiroMcQueenProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Mejiro_Ardan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Mejiro_Ardan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -303,6 +339,12 @@
   </data>
   <data name="Nakayama_Festa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Nakayama_Festa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NaritaBrianGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NaritaBrianGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NaritaBrianProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NaritaBrianProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Narita_Brian_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Narita_Brian_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -403,6 +445,12 @@
   <data name="Sweep_Tosho" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sweep_Tosho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="SymboliRudolfGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SymboliRudolfGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SymboliRudolfProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SymboliRudolfProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Symboli_Kris_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Symboli_Kris_S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -412,6 +460,12 @@
   <data name="T.M._Opera_O_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\T.M._Opera_O_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TaikiShuttleGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TaikiShuttleGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaikiShuttleProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TaikiShuttleProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Taiki_Shuttle_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Taiki_Shuttle_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -420,6 +474,12 @@
   </data>
   <data name="Tanino_Gimlet" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tanino_Gimlet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TMOperaOGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TMOperaOGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TMOperaOProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TMOperaOProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TokaiTeioGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TokaiTeioGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -438,6 +498,12 @@
   </data>
   <data name="Twin_Turbo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Twin_Turbo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VodkaGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VodkaGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VodkaProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VodkaProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Vodka_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Vodka_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
