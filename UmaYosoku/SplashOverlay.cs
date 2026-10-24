@@ -16,7 +16,7 @@ namespace UmaYosoku
         // LOOK SETTINGS
         // =========================
 
-        private const float LogoScale = 0.35f;                 // logo size as a fraction of the window (was 0.5)
+        private const float LogoScale = 0.35f;                 // logo size as a fraction of the window
         private const int GapBetweenLogoAndText = 14;          // pixels
         private const string CreditText = "Powered by: J.M, J.B";
 
@@ -24,7 +24,7 @@ namespace UmaYosoku
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Image Logo { get; set; }
 
-        // Picture of the finished UI, drawn under the white layer so the fade-out
+        // Picture of the finished UI, drawn under the splash layer so the fade-out
         // is a flicker-free crossfade instead of a see-through control.
         [Browsable(false)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
@@ -43,6 +43,11 @@ namespace UmaYosoku
         public float LogoAlpha { get; set; } = 0f;   // 0..1
 
         private readonly Font creditFont = new Font("Segoe UI", 10f, FontStyle.Regular);
+
+        // White background + logo + credit text baked into ONE image.
+        // While fading out, this single layer is faded as a whole, so the logo
+        // and the white background disappear at exactly the same rate.
+        private Bitmap layerCache;
 
         public SplashOverlay()
         {
@@ -63,6 +68,13 @@ namespace UmaYosoku
             // Everything is drawn in OnPaint
         }
 
+        protected override void OnResize(EventArgs e)
+        {
+            base.OnResize(e);
+            layerCache?.Dispose();
+            layerCache = null;
+        }
+
         protected override void OnPaint(PaintEventArgs e)
         {
             Graphics g = e.Graphics;
@@ -70,7 +82,18 @@ namespace UmaYosoku
             float whiteA = Math.Max(0f, Math.Min(1f, WhiteAlpha));
             float logoA = Math.Max(0f, Math.Min(1f, LogoAlpha));
 
-            // 1) Base layer: the UI snapshot if we have one, otherwise plain white
+            if (whiteA >= 1f)
+            {
+                // INTRO PHASE: solid white, logo fading in on top
+                g.Clear(Color.White);
+                if (logoA > 0f)
+                {
+                    DrawLogoBlock(g, logoA);
+                }
+                return;
+            }
+
+            // FADE-OUT PHASE: UI snapshot underneath, white + logo faded as ONE layer
             if (Snapshot != null)
             {
                 g.DrawImageUnscaled(Snapshot, SnapshotLocation);
@@ -80,22 +103,50 @@ namespace UmaYosoku
                 g.Clear(Color.White);
             }
 
-            // 2) White layer on top (fades out to reveal the UI)
-            if (whiteA > 0f)
-            {
-                using (var brush = new SolidBrush(
-                    Color.FromArgb((int)(whiteA * 255), 255, 255, 255)))
-                {
-                    g.FillRectangle(brush, ClientRectangle);
-                }
-            }
-
-            // 3) Logo + credit text, centered as one block
-            if (logoA <= 0f)
+            if (whiteA <= 0f || Width <= 0 || Height <= 0)
             {
                 return;
             }
 
+            EnsureLayer();
+
+            var matrix = new ColorMatrix { Matrix33 = whiteA };
+            using (var attrs = new ImageAttributes())
+            {
+                attrs.SetColorMatrix(matrix);
+                attrs.SetWrapMode(WrapMode.TileFlipXY);
+                g.DrawImage(
+                    layerCache,
+                    new Rectangle(0, 0, Width, Height),
+                    0, 0, layerCache.Width, layerCache.Height,
+                    GraphicsUnit.Pixel,
+                    attrs);
+            }
+        }
+
+        // Builds the white + logo + text image once (rebuilt only if the size changes)
+        private void EnsureLayer()
+        {
+            if (layerCache != null
+                && layerCache.Width == Width
+                && layerCache.Height == Height)
+            {
+                return;
+            }
+
+            layerCache?.Dispose();
+            layerCache = new Bitmap(Width, Height, PixelFormat.Format32bppPArgb);
+
+            using (Graphics lg = Graphics.FromImage(layerCache))
+            {
+                lg.Clear(Color.White);
+                DrawLogoBlock(lg, 1f);
+            }
+        }
+
+        // Logo + credit text, centered as one block, drawn with the given alpha
+        private void DrawLogoBlock(Graphics g, float alpha)
+        {
             g.SmoothingMode = SmoothingMode.AntiAlias;
             g.InterpolationMode = InterpolationMode.HighQualityBicubic;
             g.PixelOffsetMode = PixelOffsetMode.HighQuality;
@@ -117,7 +168,7 @@ namespace UmaYosoku
             if (Logo != null)
             {
                 var rect = new Rectangle((Width - logoW) / 2, top, logoW, logoH);
-                var matrix = new ColorMatrix { Matrix33 = logoA };
+                var matrix = new ColorMatrix { Matrix33 = alpha };
                 using (var attrs = new ImageAttributes())
                 {
                     attrs.SetColorMatrix(matrix);
@@ -130,7 +181,7 @@ namespace UmaYosoku
             float textX = (Width - textSize.Width) / 2f;
             float textY = top + logoH + GapBetweenLogoAndText;
             using (var textBrush = new SolidBrush(
-                Color.FromArgb((int)(logoA * 255), 90, 90, 90)))
+                Color.FromArgb((int)(alpha * 255), 90, 90, 90)))
             {
                 g.DrawString(CreditText, creditFont, textBrush, textX, textY);
             }
@@ -141,6 +192,7 @@ namespace UmaYosoku
             if (disposing)
             {
                 creditFont.Dispose();
+                layerCache?.Dispose();
             }
             base.Dispose(disposing);
         }
