@@ -3,11 +3,22 @@ using System.Collections.Generic;
 using System.Text;
 using System.Drawing;
 using System.Windows.Forms;
+<<<<<<< HEAD
+=======
+using System.Windows.Forms.VisualStyles;
+using System.Media;
+using UmaYosoku.PANELS;
+using UmaYosoku.UMA_DATA;
+>>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
 
 namespace UmaYosoku.UMA_BUTTONS
 {
     public class MejiroRyan : System.Windows.Forms.Button
     {
+<<<<<<< HEAD
+=======
+        private SoundPlayer sfx;
+>>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
         public MejiroRyan()
         {
             // button size
@@ -17,8 +28,12 @@ namespace UmaYosoku.UMA_BUTTONS
             // image
 
             this.Image = new Bitmap(Properties.Resources.Mejiro_Ryan, new Size(52, 52));
+<<<<<<< HEAD
 
             this.ImageAlign = ContentAlignment.MiddleCenter;
+=======
+            this.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+>>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
 
             // button style
 
@@ -36,6 +51,48 @@ namespace UmaYosoku.UMA_BUTTONS
             // cursor
 
             this.Cursor = Cursors.Hand;
+<<<<<<< HEAD
         }
+=======
+
+            // sfx
+
+            sfx = new SoundPlayer(Properties.Resources.weei);
+
+            // click event
+
+            this.Click += MejiroRyan_Click;
+        }
+
+        private void MejiroRyan_Click(object sender, EventArgs e)
+        {
+            // find pickarace panel
+
+            PickARacePanel pick26 = this.FindForm() as PickARacePanel;
+
+            if (pick26 == null)
+            {
+                MessageBox.Show("PickARacePanel was not found.");
+                return;
+            }
+            sfx.Play();
+
+            // create data form
+
+            MejiroRyanData data26 = new MejiroRyanData(pick26);
+
+            // hide race selcetion
+
+            pick26.Hide();
+
+            // show data form
+
+            data26.Show();
+
+            data26.BringToFront();
+            data26.Activate();
+        }
+
+>>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
     }
 }

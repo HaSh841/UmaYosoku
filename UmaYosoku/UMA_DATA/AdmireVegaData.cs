@@ -13,11 +13,37 @@ namespace UmaYosoku.UMA_DATA
 {
     public partial class AdmireVegaData : Form
     {
+<<<<<<< HEAD
         private SoundPlayer sfx;
+=======
+        // =========================
+        // PARALLAX SETTINGS
+        // =========================
+
+        private const int BgMargin = 40;
+        private const float BgStrength = 25f;      // keep < BgMargin
+        private const float PanelStrength = 12f;
+        private const float Smoothing = 0.12f;
+
+        private PictureBox picBox;
+        private RaceOverlayPanel overlay;
+        private System.Windows.Forms.Timer parallaxTimer;
+        private float curBgX, curBgY, curPanelX, curPanelY;
+
+        private SoundPlayer sfx;
+
+>>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
         private PickARacePanel pick;
 
         public AdmireVegaData(PickARacePanel pick)
         {
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
             // =========================
             // STORE PREVIOUS FORM
             // =========================
@@ -28,6 +54,11 @@ namespace UmaYosoku.UMA_DATA
             // FORM SETTINGS
             // =========================
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
             this.DoubleBuffered = true;
 
             this.Text = "UmaYosoku";
@@ -61,20 +92,41 @@ namespace UmaYosoku.UMA_DATA
 
             // =========================
             // BACKGROUND
+<<<<<<< HEAD
             // =========================
 
             PictureBox picBox =
+=======
+            // (oversized and NOT docked, so it can move)
+            // =========================
+
+            picBox =
+>>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
                 new PictureBox();
 
             picBox.Image =
                 Properties.Resources.admire_vega_bg;
 
+<<<<<<< HEAD
             picBox.Dock =
                 DockStyle.Fill;
 
             picBox.SizeMode =
                 PictureBoxSizeMode.StretchImage;
 
+=======
+            picBox.SizeMode =
+                PictureBoxSizeMode.StretchImage;
+
+            picBox.Size = new Size(
+                this.ClientSize.Width + BgMargin * 2,
+                this.ClientSize.Height + BgMargin * 2
+            );
+
+            picBox.Location =
+                new Point(-BgMargin, -BgMargin);
+
+>>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
             EnableDoubleBuffer(picBox);
 
             this.Controls.Add(picBox);
@@ -83,12 +135,17 @@ namespace UmaYosoku.UMA_DATA
             // OVERLAY
             // =========================
 
+<<<<<<< HEAD
             RaceOverlayPanel overlay =
+=======
+            overlay =
+>>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
                 new RaceOverlayPanel();
 
             overlay.Size =
                 new Size(400, 600);
 
+<<<<<<< HEAD
             overlay.Location =
                 new Point(
                     (this.ClientSize.Width -
@@ -98,6 +155,8 @@ namespace UmaYosoku.UMA_DATA
                      overlay.Height) / 2
                 );
 
+=======
+>>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
             EnableDoubleBuffer(overlay);
 
             picBox.Controls.Add(overlay);
@@ -133,7 +192,11 @@ namespace UmaYosoku.UMA_DATA
             // HORSE NAME (RIGHT OF PICTURE)
             // =========================
 
+<<<<<<< HEAD
             AddLabel(overlay, "Admire Vega", 110, 60, 16);
+=======
+            AddLabel(overlay, "Admire Vega", 110, 45, 16);
+>>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
 
             // =========================
             // STATS LAYER (drawn above the overlay fill)
@@ -186,6 +249,83 @@ namespace UmaYosoku.UMA_DATA
             );
 
             backButton.BringToFront();
+<<<<<<< HEAD
+=======
+
+            // =========================
+            // PARALLAX TIMER
+            // =========================
+
+            UpdatePositions();
+
+            parallaxTimer = new System.Windows.Forms.Timer();
+            parallaxTimer.Interval = 16; // ~60 FPS
+            parallaxTimer.Tick += ParallaxTimer_Tick;
+            parallaxTimer.Start();
+        }
+
+        // =========================
+        // PARALLAX UPDATE
+        // =========================
+
+        private void ParallaxTimer_Tick(object sender, EventArgs e)
+        {
+            // A tick can still be queued right as the form closes
+            if (this.IsDisposed || !this.IsHandleCreated)
+            {
+                return;
+            }
+
+            // Cursor position relative to the form
+            // (works even when hovering over the panel, picture, or buttons)
+            Point mouse = this.PointToClient(Cursor.Position);
+
+            float halfW = this.ClientSize.Width / 2f;
+            float halfH = this.ClientSize.Height / 2f;
+
+            float nx = Math.Max(-1f, Math.Min(1f, (mouse.X - halfW) / halfW));
+            float ny = Math.Max(-1f, Math.Min(1f, (mouse.Y - halfH) / halfH));
+
+            // Background moves opposite (far), panel moves with cursor (close)
+            curBgX += (-nx * BgStrength - curBgX) * Smoothing;
+            curBgY += (-ny * BgStrength - curBgY) * Smoothing;
+            curPanelX += (nx * PanelStrength - curPanelX) * Smoothing;
+            curPanelY += (ny * PanelStrength - curPanelY) * Smoothing;
+
+            UpdatePositions();
+        }
+
+        private void UpdatePositions()
+        {
+            Point bgPos = new Point(
+                (int)Math.Round(-BgMargin + curBgX),
+                (int)Math.Round(-BgMargin + curBgY)
+            );
+
+            if (picBox.Location != bgPos)
+            {
+                picBox.Location = bgPos;
+            }
+
+            // Panel position on the FORM (centered + its own offset)
+            int panelFormX = (this.ClientSize.Width - overlay.Width) / 2
+                             + (int)Math.Round(curPanelX);
+
+            int panelFormY = (this.ClientSize.Height - overlay.Height) / 2
+                             + (int)Math.Round(curPanelY);
+
+            // Convert to PictureBox coordinates (it is the parent)
+            Point panelPos = new Point(
+                panelFormX - picBox.Left,
+                panelFormY - picBox.Top
+            );
+
+            // Only move when the pixel position actually changed (less flicker)
+            if (overlay.Location != panelPos)
+            {
+                overlay.Location = panelPos;
+            }
+>>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
         }
 
         // =========================
@@ -283,7 +423,11 @@ namespace UmaYosoku.UMA_DATA
                 g.DrawLine(border, bx + labelW, by, bx + labelW, by + rowH * 2);
 
                 string[] statNames = { "Speed", "Stamina", "Power", "Guts", "Wit" };
+<<<<<<< HEAD
                 string[] statValues = { "118", "96", "132", "85", "119" };
+=======
+                string[] statValues = { "118", "96", "132", "85", "119  " };
+>>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
 
                 // star label
                 g.DrawString(
@@ -494,5 +638,19 @@ namespace UmaYosoku.UMA_DATA
             // Close this form
             this.Close();
         }
+<<<<<<< HEAD
+=======
+
+        // =========================
+        // CLEANUP
+        // =========================
+
+        protected override void OnFormClosed(FormClosedEventArgs e)
+        {
+            parallaxTimer?.Stop();
+            parallaxTimer?.Dispose();
+            base.OnFormClosed(e);
+        }
+>>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
     }
 }

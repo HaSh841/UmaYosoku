@@ -3,11 +3,22 @@ using System.Collections.Generic;
 using System.Text;
 using System.Drawing;
 using System.Windows.Forms;
+<<<<<<< HEAD
+=======
+using System.Windows.Forms.VisualStyles;
+using System.Media;
+using UmaYosoku.PANELS;
+using UmaYosoku.UMA_DATA;
+>>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
 
 namespace UmaYosoku.UMA_BUTTONS
 {
     public class GrassWonder : System.Windows.Forms.Button
     {
+<<<<<<< HEAD
+=======
+        private SoundPlayer sfx;
+>>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
         public GrassWonder()
         {
             // button size
@@ -17,8 +28,12 @@ namespace UmaYosoku.UMA_BUTTONS
             // image
 
             this.Image = new Bitmap(Properties.Resources.Grass_Wonder_29, new Size(52, 52));
+<<<<<<< HEAD
 
             this.ImageAlign = ContentAlignment.MiddleCenter;
+=======
+            this.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+>>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
 
             // button style
 
@@ -36,6 +51,48 @@ namespace UmaYosoku.UMA_BUTTONS
             // cursor
 
             this.Cursor = Cursors.Hand;
+<<<<<<< HEAD
         }
+=======
+
+            // sfx
+
+            sfx = new SoundPlayer(Properties.Resources.weei);
+
+            // click event
+
+            this.Click += GrassWonder_Click;
+        }
+
+        private void GrassWonder_Click(object sender, EventArgs e)
+        {
+            // find pickarace panel
+
+            PickARacePanel pick13 = this.FindForm() as PickARacePanel;
+
+            if (pick13 == null)
+            {
+                MessageBox.Show("PickARacePanel was not found.");
+                return;
+            }
+            sfx.Play();
+
+            // create data form
+
+            GrassWonderData data13 = new GrassWonderData(pick13);
+
+            // hide race selcetion
+
+            pick13.Hide();
+
+            // show data form
+
+            data13.Show();
+
+            data13.BringToFront();
+            data13.Activate();
+        }
+
+>>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
     }
 }
