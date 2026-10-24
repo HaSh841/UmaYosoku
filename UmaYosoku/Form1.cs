@@ -1,14 +1,9 @@
 using System;
-<<<<<<< HEAD
-using System.Drawing;
-using System.IO;
-=======
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Media;
 using System.Threading.Tasks;
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
 using System.Windows.Forms;
 
 namespace UmaYosoku
@@ -24,13 +19,6 @@ namespace UmaYosoku
         private const float PanelStrength = 12f;   // panel movement
         private const float Smoothing = 0.12f;     // 0.05 = floaty, 0.3 = snappy
 
-<<<<<<< HEAD
-        private PictureBox pictureBox;
-        private MenuPanel menuPanel;
-        private System.Windows.Forms.Timer parallaxTimer;
-
-        private float curBgX, curBgY, curPanelX, curPanelY;
-=======
         // =========================
         // INTRO SETTINGS (milliseconds)
         // =========================
@@ -69,7 +57,6 @@ namespace UmaYosoku
                 return cp;
             }
         }
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
 
         public Form1()
         {
@@ -98,14 +85,6 @@ namespace UmaYosoku
             // =========================
             // BACKGROUND
             // (oversized and NOT docked, so it can move)
-<<<<<<< HEAD
-            // =========================
-
-            pictureBox = new PictureBox();
-
-            pictureBox.Image =
-                Properties.Resources.oguri_cap;
-=======
             // During the intro it shows a still first frame, so the splash
             // crossfade matches perfectly. The GIF starts playing right
             // after the splash is gone.
@@ -117,7 +96,6 @@ namespace UmaYosoku
             pictureBox = new PictureBox();
 
             pictureBox.Image = staticBackground;
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
 
             pictureBox.SizeMode =
                 PictureBoxSizeMode.StretchImage;
@@ -149,9 +127,6 @@ namespace UmaYosoku
             UpdatePositions();
 
             // =========================
-<<<<<<< HEAD
-            // PARALLAX TIMER
-=======
             // SPLASH OVERLAY (on top of everything)
             // =========================
 
@@ -174,20 +149,11 @@ namespace UmaYosoku
 
             // =========================
             // PARALLAX TIMER (starts after the intro)
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
             // =========================
 
             parallaxTimer = new System.Windows.Forms.Timer();
             parallaxTimer.Interval = 16; // ~60 FPS
             parallaxTimer.Tick += ParallaxTimer_Tick;
-<<<<<<< HEAD
-            parallaxTimer.Start();
-
-            // =========================
-            // DASHBOARD PANEL
-            // =========================
-
-=======
         }
 
         // =========================
@@ -266,7 +232,6 @@ namespace UmaYosoku
                 await Task.Delay(16);
             }
             step(1f);
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
         }
 
         // =========================
@@ -325,14 +290,6 @@ namespace UmaYosoku
                 panelFormY - pictureBox.Top
             );
 
-<<<<<<< HEAD
-            // Title and buttons float a bit more for extra depth
-            menuPanel.SetDepthOffset(curPanelX, curPanelY);
-        }
-
-        // =========================
-        // PAUSE TIMER WHEN FORM IS HIDDEN
-=======
             // Title and buttons float a bit more for extra depth.
             // Only update when the value really changed, so we don't repaint for nothing.
             if (float.IsNaN(lastDepthX)
@@ -347,7 +304,6 @@ namespace UmaYosoku
 
         // =========================
         // PAUSE TIMER + BGM WHEN FORM IS HIDDEN
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
         // (you hide Form1 when opening PickARacePanel)
         // =========================
 
@@ -355,32 +311,20 @@ namespace UmaYosoku
         {
             base.OnVisibleChanged(e);
 
-<<<<<<< HEAD
-            if (parallaxTimer == null)
-            {
-                return;
-=======
             if (parallaxTimer == null || !introDone)
             {
                 return; // don't touch anything while the intro is running
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
             }
 
             if (this.Visible)
             {
                 parallaxTimer.Start();
-<<<<<<< HEAD
-=======
                 bgmPlayer.PlayLooping();
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
             }
             else
             {
                 parallaxTimer.Stop();
-<<<<<<< HEAD
-=======
                 bgmPlayer.Stop();
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
             }
         }
 
@@ -388,14 +332,11 @@ namespace UmaYosoku
         {
             parallaxTimer?.Stop();
             parallaxTimer?.Dispose();
-<<<<<<< HEAD
-=======
             voicePlayer?.Stop();
             bgmPlayer?.Stop();
             uiSnapshot?.Dispose();
             staticBackground?.Dispose();
             animatedBackground?.Dispose();
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
             base.OnFormClosed(e);
         }
     }

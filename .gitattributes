@@ -1,39 +1,19 @@
 ###############################################################################
 # Set default behavior to automatically normalize line endings.
-<<<<<<< HEAD
-###############################################################################
 * text=auto
-
-###############################################################################
-=======
-* text=auto
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
 # Set default behavior for command prompt diff.
 #
 # This is need for earlier builds of msysgit that does not have it on by
 # default for csharp files.
 # Note: This is only used by command line
-<<<<<<< HEAD
-###############################################################################
-#*.cs     diff=csharp
-
-###############################################################################
-# Set the merge driver for project and solution files
-#
-=======
 #*.cs     diff=csharp
 # Set the merge driver for project and solution files
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
 # Merging from the command prompt will add diff markers to the files if there
 # are conflicts (Merging from VS is not affected by the settings below, in VS
 # the diff markers are never inserted). Diff markers may cause the following 
 # file extensions to fail to load in VS. An alternative would be to treat
 # these files as binary and thus will always conflict and require user
 # intervention with every merge. To do so, just uncomment the entries below
-<<<<<<< HEAD
-###############################################################################
-=======
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
 #*.sln       merge=binary
 #*.csproj    merge=binary
 #*.vbproj    merge=binary
@@ -46,34 +26,16 @@
 #*.modelproj merge=binary
 #*.sqlproj   merge=binary
 #*.wwaproj   merge=binary
-<<<<<<< HEAD
-
-###############################################################################
-# behavior for image files
-#
-# image files are treated as binary by default.
-###############################################################################
-#*.jpg   binary
-#*.png   binary
-#*.gif   binary
-
-###############################################################################
-=======
 # behavior for image files
 # image files are treated as binary by default.
 #*.jpg   binary
 #*.png   binary
 #*.gif   binary
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
 # diff behavior for common document formats
 # 
 # Convert binary document formats to text before diffing them. This feature
 # is only available from the command line. Turn it on by uncommenting the 
 # entries below.
-<<<<<<< HEAD
-###############################################################################
-=======
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
 #*.doc   diff=astextplain
 #*.DOC   diff=astextplain
 #*.docx  diff=astextplain
@@ -84,10 +46,7 @@
 #*.PDF   diff=astextplain
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
-<<<<<<< HEAD
-=======
 *.extension filter=lfs diff=lfs merge=lfs -text
 UmaYosoku/UMA_DATA/ManhattanCafeData.cs filter=lfs diff=lfs merge=lfs -text
 *.gif filter=lfs diff=lfs merge=lfs -text
 *.wav filter=lfs diff=lfs merge=lfs -text
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9

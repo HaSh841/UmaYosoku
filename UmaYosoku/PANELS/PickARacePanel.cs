@@ -19,11 +19,7 @@ namespace UmaYosoku.PANELS
         private const int BgMargin = 40;
         private const float BgStrength = 25f;      // keep < BgMargin
         private const float PanelStrength = 12f;
-<<<<<<< HEAD
-        private const float Smoothing = 0.15f;
-=======
         private const float Smoothing = 0.20f;
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
 
         private PictureBox picBox;
         private RaceOverlayPanel overlay;

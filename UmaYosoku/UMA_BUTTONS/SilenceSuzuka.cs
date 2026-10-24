@@ -4,21 +4,15 @@ using System.Text;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
-<<<<<<< HEAD
-=======
 using System.Media;
 using UmaYosoku.PANELS;
 using UmaYosoku.UMA_DATA;
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
 
 namespace UmaYosoku.UMA_BUTTONS
 {
     public class SilenceSuzuka : System.Windows.Forms.Button
     {
-<<<<<<< HEAD
-=======
         private SoundPlayer sfx;
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
         public SilenceSuzuka()
         {
             // button size
@@ -30,11 +24,7 @@ namespace UmaYosoku.UMA_BUTTONS
             this.Image = new Bitmap(Properties.Resources.Silence_Suzuka_29, new Size(52, 52));
             this.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
-<<<<<<< HEAD
-            // btn style
-=======
             // button style
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
 
             this.FlatStyle = FlatStyle.Flat;
             this.FlatAppearance.BorderSize = 0;
@@ -43,11 +33,6 @@ namespace UmaYosoku.UMA_BUTTONS
             this.FlatAppearance.MouseOverBackColor = Color.Gray;
             this.FlatAppearance.MouseDownBackColor = Color.DimGray;
 
-<<<<<<< HEAD
-            this.Text = "";
-            this.Cursor = Cursors.Hand;
-        }
-=======
             // no text
 
             this.Text = "";
@@ -94,6 +79,5 @@ namespace UmaYosoku.UMA_BUTTONS
             data4.Activate();
         }
 
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
     }
 }

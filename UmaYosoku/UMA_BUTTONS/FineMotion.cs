@@ -3,14 +3,6 @@ using System.Collections.Generic;
 using System.Text;
 using System.Drawing;
 using System.Windows.Forms;
-<<<<<<< HEAD
-
-namespace UmaYosoku.UMA_BUTTONS
-{
-    public class FineMotion : System.Windows.Forms.Button
-    {
-        public FineMotion  ()
-=======
 using System.Windows.Forms.VisualStyles;
 using System.Media;
 using UmaYosoku.PANELS;
@@ -22,7 +14,6 @@ namespace UmaYosoku.UMA_BUTTONS
     {
         private SoundPlayer sfx;
         public FineMotion()
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
         {
             // button size
 
@@ -31,12 +22,7 @@ namespace UmaYosoku.UMA_BUTTONS
             // image
 
             this.Image = new Bitmap(Properties.Resources.Fine_Motion, new Size(52, 52));
-<<<<<<< HEAD
-
-            this.ImageAlign = ContentAlignment.MiddleCenter;
-=======
             this.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
 
             // button style
 
@@ -54,9 +40,6 @@ namespace UmaYosoku.UMA_BUTTONS
             // cursor
 
             this.Cursor = Cursors.Hand;
-<<<<<<< HEAD
-        }
-=======
 
             // sfx
 
@@ -96,6 +79,5 @@ namespace UmaYosoku.UMA_BUTTONS
             data21.Activate();
         }
 
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
     }
 }

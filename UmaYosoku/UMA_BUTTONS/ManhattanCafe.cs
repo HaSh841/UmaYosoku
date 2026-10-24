@@ -3,22 +3,16 @@ using System.Collections.Generic;
 using System.Text;
 using System.Drawing;
 using System.Windows.Forms;
-<<<<<<< HEAD
-=======
 using System.Windows.Forms.VisualStyles;
 using System.Media;
 using UmaYosoku.PANELS;
 using UmaYosoku.UMA_DATA;
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
 
 namespace UmaYosoku.UMA_BUTTONS
 {
     public class ManhattanCafe : System.Windows.Forms.Button
     {
-<<<<<<< HEAD
-=======
         private SoundPlayer sfx;
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
         public ManhattanCafe()
         {
             // button size
@@ -28,12 +22,7 @@ namespace UmaYosoku.UMA_BUTTONS
             // image
 
             this.Image = new Bitmap(Properties.Resources.Manhattan_Cafe, new Size(52, 52));
-<<<<<<< HEAD
-
-            this.ImageAlign = ContentAlignment.MiddleCenter;
-=======
             this.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
 
             // button style
 
@@ -51,9 +40,6 @@ namespace UmaYosoku.UMA_BUTTONS
             // cursor
 
             this.Cursor = Cursors.Hand;
-<<<<<<< HEAD
-        }
-=======
 
             // sfx
 
@@ -93,6 +79,5 @@ namespace UmaYosoku.UMA_BUTTONS
             data24.Activate();
         }
 
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
     }
 }

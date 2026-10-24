@@ -13,9 +13,6 @@ namespace UmaYosoku.UMA_DATA
 {
     public partial class AdmireVegaData : Form
     {
-<<<<<<< HEAD
-        private SoundPlayer sfx;
-=======
         // =========================
         // PARALLAX SETTINGS
         // =========================
@@ -32,18 +29,14 @@ namespace UmaYosoku.UMA_DATA
 
         private SoundPlayer sfx;
 
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
         private PickARacePanel pick;
 
         public AdmireVegaData(PickARacePanel pick)
         {
-<<<<<<< HEAD
-=======
 
 
 
 
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
             // =========================
             // STORE PREVIOUS FORM
             // =========================
@@ -54,11 +47,8 @@ namespace UmaYosoku.UMA_DATA
             // FORM SETTINGS
             // =========================
 
-<<<<<<< HEAD
-=======
 
 
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
             this.DoubleBuffered = true;
 
             this.Text = "UmaYosoku";
@@ -92,29 +82,15 @@ namespace UmaYosoku.UMA_DATA
 
             // =========================
             // BACKGROUND
-<<<<<<< HEAD
-            // =========================
-
-            PictureBox picBox =
-=======
             // (oversized and NOT docked, so it can move)
             // =========================
 
             picBox =
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
                 new PictureBox();
 
             picBox.Image =
                 Properties.Resources.admire_vega_bg;
 
-<<<<<<< HEAD
-            picBox.Dock =
-                DockStyle.Fill;
-
-            picBox.SizeMode =
-                PictureBoxSizeMode.StretchImage;
-
-=======
             picBox.SizeMode =
                 PictureBoxSizeMode.StretchImage;
 
@@ -126,7 +102,6 @@ namespace UmaYosoku.UMA_DATA
             picBox.Location =
                 new Point(-BgMargin, -BgMargin);
 
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
             EnableDoubleBuffer(picBox);
 
             this.Controls.Add(picBox);
@@ -135,28 +110,12 @@ namespace UmaYosoku.UMA_DATA
             // OVERLAY
             // =========================
 
-<<<<<<< HEAD
-            RaceOverlayPanel overlay =
-=======
             overlay =
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
                 new RaceOverlayPanel();
 
             overlay.Size =
                 new Size(400, 600);
 
-<<<<<<< HEAD
-            overlay.Location =
-                new Point(
-                    (this.ClientSize.Width -
-                     overlay.Width) / 2,
-
-                    (this.ClientSize.Height -
-                     overlay.Height) / 2
-                );
-
-=======
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
             EnableDoubleBuffer(overlay);
 
             picBox.Controls.Add(overlay);
@@ -192,11 +151,7 @@ namespace UmaYosoku.UMA_DATA
             // HORSE NAME (RIGHT OF PICTURE)
             // =========================
 
-<<<<<<< HEAD
-            AddLabel(overlay, "Admire Vega", 110, 60, 16);
-=======
             AddLabel(overlay, "Admire Vega", 110, 45, 16);
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
 
             // =========================
             // STATS LAYER (drawn above the overlay fill)
@@ -249,8 +204,6 @@ namespace UmaYosoku.UMA_DATA
             );
 
             backButton.BringToFront();
-<<<<<<< HEAD
-=======
 
             // =========================
             // PARALLAX TIMER
@@ -325,7 +278,6 @@ namespace UmaYosoku.UMA_DATA
             {
                 overlay.Location = panelPos;
             }
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
         }
 
         // =========================
@@ -423,11 +375,7 @@ namespace UmaYosoku.UMA_DATA
                 g.DrawLine(border, bx + labelW, by, bx + labelW, by + rowH * 2);
 
                 string[] statNames = { "Speed", "Stamina", "Power", "Guts", "Wit" };
-<<<<<<< HEAD
-                string[] statValues = { "118", "96", "132", "85", "119" };
-=======
                 string[] statValues = { "118", "96", "132", "85", "119  " };
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
 
                 // star label
                 g.DrawString(
@@ -638,8 +586,6 @@ namespace UmaYosoku.UMA_DATA
             // Close this form
             this.Close();
         }
-<<<<<<< HEAD
-=======
 
         // =========================
         // CLEANUP
@@ -651,6 +597,5 @@ namespace UmaYosoku.UMA_DATA
             parallaxTimer?.Dispose();
             base.OnFormClosed(e);
         }
->>>>>>> cff501a21142b80cd2245c27c4ac43acc2a37ec9
     }
 }
