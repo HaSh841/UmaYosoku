@@ -415,6 +415,9 @@
   <data name="oguri-cap" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\oguri-cap.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="oguri-cap-chibi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\oguri-cap-chibi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="oguri-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\oguri-icon.ico;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
