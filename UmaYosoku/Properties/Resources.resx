@@ -439,8 +439,14 @@
   <data name="Oguri_Cap_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Oguri_Cap_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="oguri_intro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\oguri_intro.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Rice_Shower" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rice_Shower.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rice_shower_exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rice_shower_exit.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Sakura_Bakushin_O" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sakura_Bakushin_O.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -570,6 +576,9 @@
   </data>
   <data name="umapyoi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\umapyoi.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ura" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ura.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="VodkaGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\VodkaGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

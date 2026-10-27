@@ -1077,6 +1077,15 @@ namespace UmaYosoku.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream oguri_intro {
+            get {
+                return ResourceManager.GetStream("oguri_intro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap oguri2 {
@@ -1132,6 +1141,15 @@ namespace UmaYosoku.Properties {
             get {
                 object obj = ResourceManager.GetObject("Rice_Shower", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream rice_shower_exit {
+            get {
+                return ResourceManager.GetStream("rice_shower_exit", resourceCulture);
             }
         }
         
@@ -1559,6 +1577,16 @@ namespace UmaYosoku.Properties {
         internal static System.IO.UnmanagedMemoryStream umapyoi {
             get {
                 return ResourceManager.GetStream("umapyoi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ura {
+            get {
+                object obj = ResourceManager.GetObject("ura", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
