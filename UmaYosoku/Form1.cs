@@ -37,7 +37,6 @@ namespace UmaYosoku
         private SplashOverlay splash;
         private Bitmap uiSnapshot;
         private SoundPlayer voicePlayer;
-        private SoundPlayer bgmPlayer;
         private bool introDone = false;
 
         private float curBgX, curBgY, curPanelX, curPanelY;
@@ -142,10 +141,10 @@ namespace UmaYosoku
 
             // =========================
             // SOUNDS
+            // (background music lives in the shared Bgm class)
             // =========================
 
             voicePlayer = new SoundPlayer(Properties.Resources.intro);
-            bgmPlayer = new SoundPlayer(Properties.Resources.umapyoi);
 
             // =========================
             // PARALLAX TIMER (starts after the intro)
@@ -193,8 +192,8 @@ namespace UmaYosoku
             await Task.Delay(AfterVoiceDelayMs);
 
             // 4) Fade the white + logo away to reveal the UI, start BGM
-            bgmPlayer.Load();
-            bgmPlayer.PlayLooping();
+            Bgm.Load();
+            Bgm.Play();
 
             await Animate(UiFadeInMs, t =>
             {
@@ -303,8 +302,9 @@ namespace UmaYosoku
         }
 
         // =========================
-        // PAUSE TIMER + BGM WHEN FORM IS HIDDEN
+        // PAUSE PARALLAX WHEN FORM IS HIDDEN
         // (you hide Form1 when opening PickARacePanel)
+        // The music is NOT touched here, so it keeps playing.
         // =========================
 
         protected override void OnVisibleChanged(EventArgs e)
@@ -319,12 +319,10 @@ namespace UmaYosoku
             if (this.Visible)
             {
                 parallaxTimer.Start();
-                bgmPlayer.PlayLooping();
             }
             else
             {
                 parallaxTimer.Stop();
-                bgmPlayer.Stop();
             }
         }
 
@@ -333,7 +331,7 @@ namespace UmaYosoku
             parallaxTimer?.Stop();
             parallaxTimer?.Dispose();
             voicePlayer?.Stop();
-            bgmPlayer?.Stop();
+            Bgm.Stop();
             uiSnapshot?.Dispose();
             staticBackground?.Dispose();
             animatedBackground?.Dispose();

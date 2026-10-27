@@ -6,6 +6,7 @@ using System.IO;
 using System.Media;
 using System.Reflection;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using UmaYosoku.Button;
 using UmaYosoku.UMA_BUTTONS;
@@ -35,6 +36,9 @@ namespace UmaYosoku.PANELS
 
         // Tooltip that shows each horse's name on hover
         private ToolTip horseTip;
+
+        // True while a horse form is open (music is stopped)
+        private bool horseOpen = false;
 
         public PickARacePanel(Form1 mainForm)
         {
@@ -647,6 +651,9 @@ namespace UmaYosoku.PANELS
 
             AttachTooltips(overlay);
 
+            // Stop the music when a horse button is pressed
+            HookHorseButtons(overlay);
+
             // =========================
             // PARALLAX TIMER
             // =========================
@@ -659,6 +666,44 @@ namespace UmaYosoku.PANELS
             parallaxTimer.Interval = 16; // ~60 FPS
             parallaxTimer.Tick += ParallaxTimer_Tick;
             parallaxTimer.Start();
+        }
+
+        // =========================
+        // MUSIC HELPERS
+        // =========================
+
+        // Stop the music when any horse button is pressed
+        private void HookHorseButtons(Control parent)
+        {
+            foreach (Control c in parent.Controls)
+            {
+                if (c is BackButton) continue;
+
+                // MouseDown fires BEFORE Click, so this still works
+                // even if the horse form opens with ShowDialog()
+                c.MouseDown += HorseButton_MouseDown;
+
+                if (c.HasChildren)
+                    HookHorseButtons(c);
+            }
+        }
+
+        private void HorseButton_MouseDown(object sender, MouseEventArgs e)
+        {
+            horseOpen = true;
+            Bgm.Pause(); // keeps the position, the character's own music plays instead
+        }
+
+        // Runs when you come back from the horse form
+        protected override void OnActivated(EventArgs e)
+        {
+            base.OnActivated(e);
+
+            if (horseOpen)
+            {
+                horseOpen = false;
+                Bgm.Resume(); // continues from where it was paused
+            }
         }
 
         // =========================
@@ -793,6 +838,7 @@ namespace UmaYosoku.PANELS
             // Close PickARacePanel
             this.Close();
 
+            // The music is not touched here, it just keeps playing
             sfx.Play();
         }
     }
