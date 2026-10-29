@@ -47,7 +47,8 @@ namespace UmaYosoku.UMA_DATA
             // FORM SETTINGS
             // =========================
 
-
+            // Keep the layout in fixed pixels so it looks the same on every PC
+            this.AutoScaleMode = AutoScaleMode.None;
 
             this.DoubleBuffered = true;
 
@@ -151,7 +152,7 @@ namespace UmaYosoku.UMA_DATA
             // HORSE NAME (RIGHT OF PICTURE)
             // =========================
 
-            AddLabel(overlay, "Daiwa Scarlet", 110, 45, 16);
+            AddLabel(overlay, "Daiwa Scarlet", 110, 45, 21);
 
             // =========================
             // STATS LAYER (drawn above the overlay fill)
@@ -322,32 +323,26 @@ namespace UmaYosoku.UMA_DATA
             Graphics g = e.Graphics;
 
             g.SmoothingMode = SmoothingMode.AntiAlias;
-            g.TextRenderingHint = TextRenderingHint.AntiAliasGridFit;
+            g.TextRenderingHint = TextRenderingHint.AntiAlias;   // was AntiAliasGridFit
 
             int w = panel.ClientSize.Width;
 
             float tx = 20f;          // table left
             float tw = w - 40f;      // table width
 
-            using (Font titleFont = new Font("Segoe UI", 12, FontStyle.Bold))
-            using (Font headFont = new Font("Segoe UI", 9, FontStyle.Bold))
-            using (Font valueFont = new Font("Segoe UI", 10, FontStyle.Bold))
-            using (Font starFont = new Font("Segoe UI Symbol", 8))
+            using (Font titleFont = UmaText.Create(16, FontStyle.Bold))
+            using (Font headFont = UmaText.Create(12, FontStyle.Bold))
+            using (Font valueFont = UmaText.Create(13, FontStyle.Bold))
+            using (Font starFont = UmaText.CreateSymbol(11, FontStyle.Regular))
             using (Pen border = new Pen(Color.FromArgb(120, 255, 255, 255)))
             using (SolidBrush headFill = new SolidBrush(Color.FromArgb(45, 255, 255, 255)))
             using (SolidBrush bodyFill = new SolidBrush(Color.FromArgb(18, 255, 255, 255)))
-            using (StringFormat center = new StringFormat())
             {
-                center.Alignment = StringAlignment.Center;
-                center.LineAlignment = StringAlignment.Center;
-                center.FormatFlags =
-                    StringFormatFlags.NoWrap | StringFormatFlags.NoClip;
-
                 // =========================
                 // BASE STATS TABLE
                 // =========================
 
-                DrawText(g, "Base stats", titleFont, center, 0, 108, w, 26);
+                DrawText(g, "Base stats", titleFont, 0, 108, w, 26);
 
                 float bx = tx;
                 float by = 138f;
@@ -378,30 +373,22 @@ namespace UmaYosoku.UMA_DATA
                 string[] statValues = { "109", "99", "103", "122", "117" };
 
                 // star label
-                g.DrawString(
-                    "★★★★★",
-                    starFont,
-                    Brushes.Gold,
-                    new RectangleF(bx, by + rowH, labelW, rowH),
-                    center
-                );
+                DrawStars(g, "★★★★★", starFont, bx, by + rowH, labelW, rowH);
 
                 for (int i = 0; i < 5; i++)
                 {
                     float cx = bx + labelW + i * statColW;
 
-                    DrawText(g, statNames[i], headFont, center,
-                        cx, by, statColW, rowH);
+                    DrawText(g, statNames[i], headFont, cx, by, statColW, rowH);
 
-                    DrawText(g, statValues[i], valueFont, center,
-                        cx, by + rowH, statColW, rowH);
+                    DrawText(g, statValues[i], valueFont, cx, by + rowH, statColW, rowH);
                 }
 
                 // =========================
                 // APTITUDE TABLE
                 // =========================
 
-                DrawText(g, "Aptitude", titleFont, center, 0, 235, w, 26);
+                DrawText(g, "Aptitude", titleFont, 0, 235, w, 26);
 
                 float ax = tx;
                 float ay = 263f;
@@ -428,19 +415,19 @@ namespace UmaYosoku.UMA_DATA
                 g.DrawLine(border, ax, ay + aRowH, ax + tw, ay + aRowH);
                 g.DrawLine(border, ax, ay + aRowH * 2, ax + tw, ay + aRowH * 2);
 
-                DrawAptRow(g, headFont, valueFont, center, border,
+                DrawAptRow(g, headFont, valueFont, border,
                     ax, ay, aLabelW, aCellsW, aRowH,
                     "Surface",
                     new[] { "Turf", "Dirt" },
                     new[] { "2", "8" });
 
-                DrawAptRow(g, headFont, valueFont, center, border,
+                DrawAptRow(g, headFont, valueFont, border,
                     ax, ay + aRowH, aLabelW, aCellsW, aRowH,
                     "Distance",
                     new[] { "Sprint", "Mile", "Medium", "Long" },
                     new[] { "7", "2", "2", "3" });
 
-                DrawAptRow(g, headFont, valueFont, center, border,
+                DrawAptRow(g, headFont, valueFont, border,
                     ax, ay + aRowH * 2, aLabelW, aCellsW, aRowH,
                     "Strategy",
                     new[] { "Front", "Pace", "Late", "End" },
@@ -452,7 +439,6 @@ namespace UmaYosoku.UMA_DATA
             Graphics g,
             Font headFont,
             Font valueFont,
-            StringFormat center,
             Pen border,
             float x,
             float y,
@@ -464,7 +450,7 @@ namespace UmaYosoku.UMA_DATA
             string[] values)
         {
             // Row name, centered in the shaded column
-            DrawText(g, rowName, headFont, center, x, y, labelW, rowH);
+            DrawText(g, rowName, headFont, x, y, labelW, rowH);
 
             float cellW = cellsW / headers.Length;
 
@@ -479,8 +465,8 @@ namespace UmaYosoku.UMA_DATA
                 }
 
                 // name on top, number below
-                DrawText(g, headers[i], headFont, center, cx, y + 6, cellW, 22);
-                DrawText(g, values[i], valueFont, center, cx, y + 28, cellW, 26);
+                DrawText(g, headers[i], headFont, cx, y + 6, cellW, 22);
+                DrawText(g, values[i], valueFont, cx, y + 28, cellW, 26);
             }
         }
 
@@ -499,69 +485,61 @@ namespace UmaYosoku.UMA_DATA
             return path;
         }
 
-        private void DrawText(
-            Graphics g,
-            string text,
-            Font font,
-            StringFormat format,
-            float x,
-            float y,
-            float width,
-            float height)
+        private void DrawText(Graphics g, string text, Font font,
+            float x, float y, float width, float height)
         {
-            // soft shadow
-            g.DrawString(
-                text,
-                font,
-                Brushes.Black,
-                new RectangleF(x + 1, y + 1, width, height),
-                format
-            );
+            UmaText.DrawFit(g, text, font, new RectangleF(x, y, width, height));
+        }
 
-            // main text
-            g.DrawString(
-                text,
-                font,
-                Brushes.White,
-                new RectangleF(x, y, width, height),
-                format
-            );
+        private void DrawStars(Graphics g, string text, Font font,
+            float x, float y, float width, float height)
+        {
+            float maxWidth = width - 6f;
+
+            SizeF size = g.MeasureString(
+                text, font, PointF.Empty, StringFormat.GenericTypographic);
+
+            Font drawFont = font;
+            bool owns = false;
+
+            if (size.Width > maxWidth)
+            {
+                drawFont = new Font(
+                    font.FontFamily,
+                    Math.Max(6f, font.Size * (maxWidth / size.Width) * 0.98f),
+                    font.Style,
+                    font.Unit);
+                owns = true;
+            }
+
+            using (StringFormat sf = new StringFormat(
+                StringFormatFlags.NoWrap | StringFormatFlags.NoClip))
+            {
+                sf.Alignment = StringAlignment.Center;
+                sf.LineAlignment = StringAlignment.Center;
+
+                g.DrawString(text, drawFont, Brushes.Gold,
+                    new RectangleF(x, y, width, height), sf);
+            }
+
+            if (owns)
+                drawFont.Dispose();
         }
 
         // =========================
         // LABEL HELPER
         // =========================
 
-        private void AddLabel(
-            Control parent,
-            string text,
-            int x,
-            int y,
-            float fontSize)
+        private void AddLabel(Control parent, string text, int x, int y, float fontPixelSize)
         {
-            Label label =
-                new Label();
-
+            Label label = new Label();
             label.Text = text;
-
-            label.ForeColor =
-                Color.White;
-
-            label.Font =
-                new Font(
-                    "Segoe UI",
-                    fontSize,
-                    FontStyle.Regular
-                );
-
+            label.ForeColor = Color.White;
+            label.Font = UmaText.Create(fontPixelSize, FontStyle.Regular);
             label.AutoSize = true;
-
-            label.BackColor =
-                Color.Transparent;
-
-            label.Location =
-                new Point(x, y);
-
+            label.UseCompatibleTextRendering = true;
+            label.BackColor = Color.Transparent;
+            label.Location = new Point(x, y);
             parent.Controls.Add(label);
         }
 

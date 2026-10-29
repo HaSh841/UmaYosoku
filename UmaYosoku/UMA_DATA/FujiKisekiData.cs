@@ -49,7 +49,6 @@ namespace UmaYosoku.UMA_DATA
 
             this.AutoScaleMode = AutoScaleMode.None;
 
-
             this.DoubleBuffered = true;
 
             this.Text = "UmaYosoku";
