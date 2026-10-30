@@ -1682,6 +1682,26 @@ namespace UmaYosoku.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap YukinoBijin {
+            get {
+                object obj = ResourceManager.GetObject("YukinoBijin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap YukinoBijinGif {
+            get {
+                object obj = ResourceManager.GetObject("YukinoBijinGif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Zenno_Rob_Roy {
             get {
                 object obj = ResourceManager.GetObject("Zenno_Rob_Roy", resourceCulture);
