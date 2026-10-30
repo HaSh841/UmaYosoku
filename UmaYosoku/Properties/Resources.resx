@@ -286,8 +286,20 @@
   <data name="Ikuno_Dictus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ikuno_Dictus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="InariOneGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InariOneGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InariOneProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InariOneProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Inari_One" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Inari_One.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InesFujinGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InesFujinGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InesFujinProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InesFujinProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Ines_Fujin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ines_Fujin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

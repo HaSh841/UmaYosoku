@@ -630,9 +630,49 @@ namespace UmaYosoku.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap InariOneGif {
+            get {
+                object obj = ResourceManager.GetObject("InariOneGif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap InariOneProfile {
+            get {
+                object obj = ResourceManager.GetObject("InariOneProfile", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Ines_Fujin {
             get {
                 object obj = ResourceManager.GetObject("Ines_Fujin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap InesFujinGif {
+            get {
+                object obj = ResourceManager.GetObject("InesFujinGif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap InesFujinProfile {
+            get {
+                object obj = ResourceManager.GetObject("InesFujinProfile", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
