@@ -1464,6 +1464,26 @@ namespace UmaYosoku.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ShinkoWindyGif {
+            get {
+                object obj = ResourceManager.GetObject("ShinkoWindyGif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ShinkoWindyProfile {
+            get {
+                object obj = ResourceManager.GetObject("ShinkoWindyProfile", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Silence_Suzuka_29 {
             get {
                 object obj = ResourceManager.GetObject("Silence_Suzuka_29", resourceCulture);
@@ -1567,6 +1587,26 @@ namespace UmaYosoku.Properties {
         internal static System.Drawing.Bitmap Sweep_Tosho {
             get {
                 object obj = ResourceManager.GetObject("Sweep_Tosho", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SweepToshoGif {
+            get {
+                object obj = ResourceManager.GetObject("SweepToshoGif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SweepToshoProfile {
+            get {
+                object obj = ResourceManager.GetObject("SweepToshoProfile", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
