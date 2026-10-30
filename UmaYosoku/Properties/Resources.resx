@@ -151,6 +151,12 @@
   <data name="Agnes_Tachyon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Agnes_Tachyon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="AirShakurGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AirShakurGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AirShakurProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AirShakurProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="air_air" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\air_air.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -190,6 +196,12 @@
   <data name="Copano_Rickey" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Copano_Rickey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="CurrenChanGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CurrenChanGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CurrenChanProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CurrenChanProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Curren_Chan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Curren_Chan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -207,6 +219,12 @@
   </data>
   <data name="Daiwa_Scarlet_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Daiwa_Scarlet_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EishinFlashGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EishinFlashGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EishinFlashProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EishinFlashProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Eishin_Flash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Eishin_Flash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -237,6 +255,12 @@
   </data>
   <data name="Fuji_Kiseki_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fuji_Kiseki_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GoldCityGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GoldCityGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GoldCityProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GoldCityProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GoldShipGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GoldShipGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -306,6 +330,12 @@
   </data>
   <data name="intro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\intro.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="KawakamiPrincessGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KawakamiPrincessGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KawakamiPrincessProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KawakamiPrincessProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Kawakami_Princess" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kawakami_Princess.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -469,6 +499,12 @@
   <data name="rice_shower_exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rice_shower_exit.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="SakuraBakushinOGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SakuraBakushinOGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SakuraBakushinOProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SakuraBakushinOProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Sakura_Bakushin_O" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sakura_Bakushin_O.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -480,6 +516,12 @@
   </data>
   <data name="Satono_Diamond" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Satono_Diamond.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SeekingthePearlGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SeekingthePearlGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SeekingthePearlProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SeekingthePearlProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Seeking_The_Pearl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Seeking_The_Pearl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -612,6 +654,12 @@
   </data>
   <data name="weei" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\weei.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="WinningTicketGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WinningTicketGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WinningTicketProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WinningTicketProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Winning_Ticket" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Winning_Ticket.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
