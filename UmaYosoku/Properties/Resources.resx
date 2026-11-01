@@ -172,11 +172,23 @@
   <data name="Aston_Machan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Aston_Machan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BambooMemoryGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BambooMemoryGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BambooMemoryProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BambooMemoryProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Bamboo_Memory" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Bamboo_Memory.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bgm_of_agnes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bgm_of_agnes.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BikoPegasusGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BikoPegasusGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BikoPegasusProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BikoPegasusProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Biko_Pegasus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Biko_Pegasus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -286,6 +298,12 @@
   <data name="hachimiMusic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hachimiMusic.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="HaruUraraGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HaruUraraGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HaruUraraProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HaruUraraProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Haru_Urara" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Haru_Urara.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -367,11 +385,23 @@
   <data name="Maruzensky_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Maruzensky_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="MarvelousSundayGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MarvelousSundayGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MarvelousSundayProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MarvelousSundayProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Marvelous_Sunday" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Marvelous_Sunday.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Matikanefukukitaru" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Matikanefukukitaru.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MatikanefukukitaruGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MatikanefukukitaruGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MatikanefukukitaruProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MatikanefukukitaruProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Matikanetannhauser" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Matikanetannhauser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -445,6 +475,12 @@
   <data name="NaritaBrianProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NaritaBrianProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="NaritaTaishinGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NaritaTaishinGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NaritaTaishinProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NaritaTaishinProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Narita_Brian_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Narita_Brian_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -456,6 +492,12 @@
   </data>
   <data name="Nice_Nature" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Nice_Nature.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NishinoFlowerGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NishinoFlowerGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NishinoFlowerProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NishinoFlowerProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Nishino_Flower" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Nishino_Flower.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

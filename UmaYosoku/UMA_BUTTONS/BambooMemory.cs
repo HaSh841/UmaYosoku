@@ -3,11 +3,16 @@ using System.Collections.Generic;
 using System.Text;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
+using System.Media;
+using UmaYosoku.PANELS;
+using UmaYosoku.UMA_DATA;
 
 namespace UmaYosoku.UMA_BUTTONS
 {
     public class BambooMemory : System.Windows.Forms.Button
     {
+        private SoundPlayer sfx;
         public BambooMemory()
         {
             // button size
@@ -17,8 +22,7 @@ namespace UmaYosoku.UMA_BUTTONS
             // image
 
             this.Image = new Bitmap(Properties.Resources.Bamboo_Memory, new Size(52, 52));
-
-            this.ImageAlign = ContentAlignment.MiddleCenter;
+            this.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
             // button style
 
@@ -36,6 +40,44 @@ namespace UmaYosoku.UMA_BUTTONS
             // cursor
 
             this.Cursor = Cursors.Hand;
+
+            // sfx
+
+            sfx = new SoundPlayer(Properties.Resources.weei);
+
+            // click event
+
+            this.Click += BambooMemory_Click;
         }
+
+        private void BambooMemory_Click(object sender, EventArgs e)
+        {
+            // find pickarace panel
+
+            PickARacePanel pick50 = this.FindForm() as PickARacePanel;
+
+            if (pick50 == null)
+            {
+                MessageBox.Show("PickARacePanel was not found.");
+                return;
+            }
+            sfx.Play();
+
+            // create data form
+
+            BambooMemoryData data50 = new BambooMemoryData(pick50);
+
+            // hide race selcetion
+
+            pick50.Hide();
+
+            // show data form
+
+            data50.Show();
+
+            data50.BringToFront();
+            data50.Activate();
+        }
+
     }
 }
