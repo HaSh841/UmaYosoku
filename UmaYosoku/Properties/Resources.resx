@@ -415,8 +415,20 @@
   <data name="Mayano_Top_Gun" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Mayano_Top_Gun.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="MeishoDotoGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MeishoDotoGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MeishoDotoProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MeishoDotoProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Meisho_Doto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Meisho_Doto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MejiroDoberGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MejiroDoberGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MejiroDoberProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MejiroDoberProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MejiroMcQueenGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MejiroMcQueenGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -456,6 +468,12 @@
   </data>
   <data name="MihonoBourbonProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MihonoBourbonProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MrCBGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MrCBGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MrCBProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MrCBProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Mr_CB" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Mr_CB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
