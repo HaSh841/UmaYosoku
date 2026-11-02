@@ -3,11 +3,16 @@ using System.Collections.Generic;
 using System.Text;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
+using System.Media;
+using UmaYosoku.PANELS;
+using UmaYosoku.UMA_DATA;
 
 namespace UmaYosoku.UMA_BUTTONS
 {
     public class KingHalo : System.Windows.Forms.Button
     {
+        private SoundPlayer sfx;
         public KingHalo()
         {
             // button size
@@ -17,8 +22,7 @@ namespace UmaYosoku.UMA_BUTTONS
             // image
 
             this.Image = new Bitmap(Properties.Resources.King_Halo, new Size(52, 52));
-
-            this.ImageAlign = ContentAlignment.MiddleCenter;
+            this.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
             // button style
 
@@ -36,6 +40,44 @@ namespace UmaYosoku.UMA_BUTTONS
             // cursor
 
             this.Cursor = Cursors.Hand;
+
+            // sfx
+
+            sfx = new SoundPlayer(Properties.Resources.weei);
+
+            // click event
+
+            this.Click += KingHalo_Click;
         }
+
+        private void KingHalo_Click(object sender, EventArgs e)
+        {
+            // find pickarace panel
+
+            PickARacePanel pick58 = this.FindForm() as PickARacePanel;
+
+            if (pick58 == null)
+            {
+                MessageBox.Show("PickARacePanel was not found.");
+                return;
+            }
+            sfx.Play();
+
+            // create data form
+
+            KingHaloData data58 = new KingHaloData(pick58);
+
+            // hide race selcetion
+
+            pick58.Hide();
+
+            // show data form
+
+            data58.Show();
+
+            data58.BringToFront();
+            data58.Activate();
+        }
+
     }
 }

@@ -325,6 +325,12 @@
   <data name="Hishi_Amazon_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Hishi_Amazon_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="IkunoDictusGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IkunoDictusGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IkunoDictusProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IkunoDictusProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Ikuno_Dictus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ikuno_Dictus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -357,6 +363,12 @@
   </data>
   <data name="Kawakami_Princess" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kawakami_Princess.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KingHaloGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KingHaloGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KingHaloProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KingHaloProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="King_Halo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\King_Halo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -405,6 +417,12 @@
   </data>
   <data name="Matikanetannhauser" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Matikanetannhauser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MatikanetannhauserGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MatikanetannhauserGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MatikanetannhauserProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MatikanetannhauserProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MayanoTopGunGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MayanoTopGunGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -507,6 +525,12 @@
   </data>
   <data name="Narita_Top_Road" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Narita_Top_Road.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NiceNatureGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NiceNatureGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NiceNatureProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NiceNatureProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Nice_Nature" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Nice_Nature.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
