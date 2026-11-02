@@ -3,11 +3,16 @@ using System.Collections.Generic;
 using System.Text;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
+using System.Media;
+using UmaYosoku.PANELS;
+using UmaYosoku.UMA_DATA;
 
 namespace UmaYosoku.UMA_BUTTONS
 {
     public class TsurumaruTsuyoshi : System.Windows.Forms.Button
     {
+        private SoundPlayer sfx;
         public TsurumaruTsuyoshi()
         {
             // button size
@@ -17,8 +22,7 @@ namespace UmaYosoku.UMA_BUTTONS
             // image
 
             this.Image = new Bitmap(Properties.Resources.Tsurumaru_Tsuyoshi, new Size(52, 52));
-
-            this.ImageAlign = ContentAlignment.MiddleCenter;
+            this.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
             // button style
 
@@ -36,6 +40,44 @@ namespace UmaYosoku.UMA_BUTTONS
             // cursor
 
             this.Cursor = Cursors.Hand;
+
+            // sfx
+
+            sfx = new SoundPlayer(Properties.Resources.weei);
+
+            // click event
+
+            this.Click += TsurumaruTsuyoshi_Click;
         }
+
+        private void TsurumaruTsuyoshi_Click(object sender, EventArgs e)
+        {
+            // find pickarace panel
+
+            PickARacePanel pick70 = this.FindForm() as PickARacePanel;
+
+            if (pick70 == null)
+            {
+                MessageBox.Show("PickARacePanel was not found.");
+                return;
+            }
+            sfx.Play();
+
+            // create data form
+
+            TsurumaruTsuyoshiData data70 = new TsurumaruTsuyoshiData(pick70);
+
+            // hide race selcetion
+
+            pick70.Hide();
+
+            // show data form
+
+            data70.Show();
+
+            data70.BringToFront();
+            data70.Activate();
+        }
+
     }
 }
